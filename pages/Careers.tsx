@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Starfield from '../components/Starfield';
 
 const Careers: React.FC = () => {
   const { t, language } = useLanguage();
@@ -24,7 +25,9 @@ const Careers: React.FC = () => {
     : jobs.filter(job => job.category === selectedCategory);
 
   return (
-    <div className="pt-40 pb-32">
+    <div className="relative pt-40 pb-32 min-h-screen bg-black">
+      {/* Starfield Background */}
+      <Starfield />
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div>

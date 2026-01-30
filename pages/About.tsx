@@ -1,13 +1,16 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Starfield from '../components/Starfield';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="pt-40 pb-32">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="relative min-h-screen bg-black">
+      {/* Starfield Background */}
+      <Starfield />
+      <div className="max-w-7xl mx-auto px-6 py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold mb-12 tracking-tight">

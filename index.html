@@ -49,6 +49,37 @@
             background: #333;
             border-radius: 10px;
         }
+        .animate-pop-in {
+            animation: popIn 1s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1.5s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 <script type="importmap">
 {

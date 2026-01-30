@@ -1,12 +1,15 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import Starfield from '../components/Starfield';
 
 const Culture: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="pt-40 pb-32 bg-black">
+    <div className="relative min-h-screen bg-black">
+      {/* Starfield Background */}
+      <Starfield />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-32">
           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">{t.culture.title}</h1>

@@ -2,12 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import heroLogo from '../hero-logo.png';
 import { useLanguage } from '../contexts/LanguageContext';
+import Starfield from '../components/Starfield';
 
 const Home: React.FC = () => {
   const { t } = useLanguage();
 
   return (
     <div className="relative">
+      {/* Starfield Background */}
+      <Starfield />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/10 via-black to-black z-0"></div>
@@ -17,11 +20,11 @@ const Home: React.FC = () => {
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
           {/* Hero Image Logo */}
-          <div className="mb-6 flex justify-center animate-fade-in">
+          <div className="mb-6 flex justify-center">
              <img 
                src={heroLogo} 
                alt="Verspot Hero Logo" 
-               className="h-32 md:h-64 w-auto object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
+               className="h-32 md:h-64 w-auto object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)] animate-pop-in"
              />
           </div>
 
