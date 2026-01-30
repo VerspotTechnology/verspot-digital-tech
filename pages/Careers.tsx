@@ -14,63 +14,10 @@ const Careers: React.FC = () => {
   // Use English categories when in English mode
   const categories = language === 'en-US' 
     ? ['All', 'Technical', 'Content & Design', 'Operations & Product']
-    : ['全部', '技术类', '内容与设计', '运营与产品'];
+    : ['全部', '技术', '内容与设计', '运营与产品'];
 
-  // Use English jobs when in English mode
-  const jobs = language === 'en-US' ? t.careers.jobs : [
-    {
-      id: '1',
-      title: '前端开发工程师 (React/TS)',
-      category: '技术类',
-      description: '负责 Verspot 核心产品的 Web 端研发，构建高性能、极具未来感的交互界面。',
-      requirements: [
-        '熟练掌握 React, TypeScript, Tailwind CSS',
-        '对 WebGL 或交互动画有浓厚兴趣',
-        '良好的工程化意识，关注代码质量',
-        '3年以上前端开发经验或优秀的应届生'
-      ],
-      location: '邯郸 / 远程'
-    },
-    {
-      id: '2',
-      title: '游戏策划',
-      category: '内容与设计',
-      description: '负责数字娱乐体验的核心逻辑设计，构建丰富的玩法机制与社区互动模型。',
-      requirements: [
-        '对各类数字娱乐产品有深度研究',
-        '极强的逻辑思维与文档撰写能力',
-        '能够跨部门沟通，推进创意落地',
-        '具备数值设计或关卡设计经验者优先'
-      ],
-      location: '邯郸'
-    },
-    {
-      id: '3',
-      title: 'UI / 视觉设计师',
-      category: '内容与设计',
-      description: '定义 Verspot 宇宙的视觉语言，从 Logo 到复杂的交互面板，实现顶级的科技感美学。',
-      requirements: [
-        '扎实的平面设计与交互设计功底',
-        '熟练使用 Figma, PS, AE 等工具',
-        '对未来感、极简风格有深刻理解',
-        '能够将抽象概念转化为高质量视觉稿'
-      ],
-      location: '邯郸 / 远程'
-    },
-    {
-      id: '4',
-      title: '产品助理',
-      category: '运营与产品',
-      description: '协助产品经理进行市场调研、数据分析与原型设计，把控产品迭代细节。',
-      requirements: [
-        '极强的执行力与学习能力',
-        '对数字娱乐市场趋势敏感',
-        '熟练使用原型工具及办公软件',
-        '优秀的沟通协调能力'
-      ],
-      location: '邯郸'
-    }
-  ];
+  // Use jobs from translation files based on language
+  const jobs = t.careers.jobs || [];
 
   const filteredJobs = selectedCategory === (language === 'en-US' ? 'All' : '全部') 
     ? jobs 
