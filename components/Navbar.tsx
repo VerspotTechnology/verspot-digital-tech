@@ -71,8 +71,9 @@ const Navbar: React.FC = () => {
           <LanguageSwitcher />
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        {/* Mobile Menu Button and Language Switcher */}
+        <div className="md:hidden flex items-center space-x-4">
+          <LanguageSwitcher />
           <button 
             onClick={toggleMobileMenu}
             className="text-white p-2 focus:outline-none"
@@ -113,9 +114,6 @@ const Navbar: React.FC = () => {
               >
                 {t.nav.hiring}
               </Link>
-              <div className="flex justify-center pt-4 border-t border-white/5">
-                <LanguageSwitcher />
-              </div>
             </div>
           </div>
         )}
