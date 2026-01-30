@@ -39,26 +39,33 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <div className="relative bg-black rounded-3xl border border-white/10 p-12 overflow-hidden">
-                <div className="absolute top-0 right-0 p-8 opacity-10">
+                {/* Background Image Container */}
+                <div className="absolute inset-0 z-0 opacity-10 group-hover:opacity-15 transition-opacity">
+                  <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=company%20philosophy%20innovation%20futuristic%20digital%20background&image_size=landscape_4_3')"}}></div>
+                </div>
+                <div className="absolute top-0 right-0 p-8 opacity-10 z-10">
                   <svg className="w-32 h-32" viewBox="0 0 24 24" fill="white">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-8 text-white uppercase tracking-tighter">{t.about.philosophy}</h3>
-                <ul className="space-y-6">
-                  <li className="flex items-center gap-4">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-300">{t.about.philosophy1}</span>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-300">{t.about.philosophy2}</span>
-                  </li>
-                  <li className="flex items-center gap-4">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span className="text-gray-300">{t.about.philosophy3}</span>
-                  </li>
-                </ul>
+                {/* Text Content */}
+                <div className="relative z-10">
+                  <h3 className="text-2xl font-bold mb-8 text-white uppercase tracking-tighter">{t.about.philosophy}</h3>
+                  <ul className="space-y-6">
+                    <li className="flex items-center gap-4">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                      <span className="text-gray-300">{t.about.philosophy1}</span>
+                    </li>
+                    <li className="flex items-center gap-4">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                      <span className="text-gray-300">{t.about.philosophy2}</span>
+                    </li>
+                    <li className="flex items-center gap-4">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                      <span className="text-gray-300">{t.about.philosophy3}</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
