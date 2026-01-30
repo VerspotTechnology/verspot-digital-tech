@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 border-t border-white/5 pt-10">
-          <p>© 2024 河北省点域数字科技责任有限公司. All rights reserved.</p>
+          <p>© 2025 河北省点域数字科技责任有限公司. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">法律声明</a>
             <a href="#" className="hover:text-white">隐私政策</a>
