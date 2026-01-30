@@ -83,13 +83,13 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-6">
-              <div className="aspect-square bg-white/[0.02] rounded-[2.5rem] border border-white/10 p-6 sm:p-8 md:p-10 flex flex-col justify-end group hover:bg-white/[0.05] transition-all">
-                <div className="text-xl sm:text-2xl md:text-3xl font-black mb-2 sm:mb-3 metallic-text">COMMUNITY</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="aspect-square bg-white/[0.02] rounded-[2.5rem] border border-white/10 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-end group hover:bg-white/[0.05] transition-all">
+                <div className="text-[clamp(1rem,4vw,3rem)] font-black mb-2 metallic-text">COMMUNITY</div>
                 <div className="text-xs text-gray-500 uppercase tracking-[0.3em] font-bold">{t.home.business.community}</div>
               </div>
-              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[2.5rem] border border-white/10 p-6 sm:p-8 md:p-10 flex flex-col justify-end mt-16 group hover:from-blue-800/30 transition-all">
-                <div className="text-xl sm:text-2xl md:text-3xl font-black mb-2 sm:mb-3 metallic-text">FUTURE</div>
+              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[2.5rem] border border-white/10 p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-end sm:mt-16 group hover:from-blue-800/30 transition-all">
+                <div className="text-[clamp(1rem,4vw,3rem)] font-black mb-2 metallic-text">FUTURE</div>
                 <div className="text-xs text-gray-500 uppercase tracking-[0.3em] font-bold">{t.home.business.future}</div>
               </div>
             </div>
