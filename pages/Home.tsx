@@ -84,13 +84,27 @@ const Home: React.FC = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
-              <div className="aspect-square bg-white/[0.02] rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end group hover:bg-white/[0.05] transition-all">
-                <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">COMMUNITY</div>
-                <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.community}</div>
+              <div className="aspect-square bg-white/[0.02] rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end group hover:bg-white/[0.05] transition-all relative overflow-hidden">
+                {/* Background Image Container */}
+                <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                  <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=community%20gaming%20space%20digital%20universe%20futuristic&image_size=square')"}}></div>
+                </div>
+                {/* Text Content */}
+                <div className="relative z-10">
+                  <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">COMMUNITY</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.community}</div>
+                </div>
               </div>
-              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end sm:mt-8 md:mt-12 lg:mt-16 group hover:from-blue-800/30 transition-all">
-                <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">FUTURE</div>
-                <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.future}</div>
+              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end sm:mt-8 md:mt-12 lg:mt-16 group hover:from-blue-800/30 transition-all relative overflow-hidden">
+                {/* Background Image Container */}
+                <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                  <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=future%20technology%20digital%20innovation%20futuristic&image_size=portrait_4_3')"}}></div>
+                </div>
+                {/* Text Content */}
+                <div className="relative z-10">
+                  <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">FUTURE</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.future}</div>
+                </div>
               </div>
             </div>
           </div>
