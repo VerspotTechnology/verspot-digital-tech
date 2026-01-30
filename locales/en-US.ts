@@ -98,7 +98,7 @@ export const enUS = {
     subtitle: 'JOIN US',
     intro: 'If you love games, are passionate about technological innovation, and want to work in a passionate environment, then Verspot is your ideal place.',
     quote: '"We believe that competition is not hostility, but the most authentic way for players to communicate."',
-    categories: ['All', 'Technical', 'Content & Design', 'Operations & Product'],
+    categories: ['All', 'Technical', 'Content & Design', 'Operations & Product', 'Talent'],
     jobLabels: {
       category: 'Category',
       title: 'Title',
@@ -254,7 +254,7 @@ export const enUS = {
       {
         id: '11',
         title: 'Actor/Actress for Corporate Culture Video',
-        category: 'Content & Design',
+        category: 'Talent',
         description: 'Participate in the shooting of Verspot\'s corporate culture promotional videos, showcasing the company\'s values and working atmosphere.',
         requirements: [
           'Good appearance and expressive ability',
@@ -267,7 +267,7 @@ export const enUS = {
       {
         id: '12',
         title: 'Model for Corporate Branding',
-        category: 'Content & Design',
+        category: 'Talent',
         description: 'Serve as a model for Verspot\'s corporate branding materials, including promotional videos, photoshoots, and marketing campaigns.',
         requirements: [
           'Professional modeling experience',

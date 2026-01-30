@@ -13,8 +13,8 @@ const Careers: React.FC = () => {
   
   // Use English categories when in English mode
   const categories = language === 'en-US' 
-    ? ['All', 'Technical', 'Content & Design', 'Operations & Product']
-    : ['全部', '技术', '内容与设计', '运营与产品'];
+    ? ['All', 'Technical', 'Content & Design', 'Operations & Product', 'Talent']
+    : ['全部', '技术', '内容与设计', '运营与产品', '演艺模特'];
 
   // Use jobs from translation files based on language
   const jobs = t.careers.jobs || [];

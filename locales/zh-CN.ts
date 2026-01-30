@@ -83,7 +83,7 @@ export const zhCN = {
     subtitle: 'JOIN US',
     intro: '如果你热爱游戏、热衷于技术创新，并且想要在一个充满激情的环境中工作，那么 Verspot 就是你的理想之地。',
     quote: '"我们相信，对战不是敌意，而是玩家之间最真实的交流方式。"',
-    categories: ['全部', '技术', '内容与设计', '运营与产品'],
+    categories: ['全部', '技术', '内容与设计', '运营与产品', '演艺模特'],
     jobLabels: {
       category: '分类',
       title: '职位',
@@ -239,7 +239,7 @@ export const zhCN = {
       {
         id: '11',
         title: '企业文化宣传片演员',
-        category: '内容与设计',
+        category: '演艺模特',
         description: '参与 Verspot 企业文化宣传片的拍摄，展示公司的价值观和工作氛围。',
         requirements: [
           '形象良好，表现力强',
@@ -252,7 +252,7 @@ export const zhCN = {
       {
         id: '12',
         title: '企业品牌模特',
-        category: '内容与设计',
+        category: '演艺模特',
         description: '担任 Verspot 企业品牌材料的模特，包括宣传片、照片拍摄和营销活动。',
         requirements: [
           '专业模特经验',
