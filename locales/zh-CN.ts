@@ -9,7 +9,7 @@ export const zhCN = {
   },
   home: {
     hero: {
-      title: 'Verspot Technology (China) Co., Ltd.',
+      title: '河北省点域数字科技有限责任公司',
       subtitle: '构建多元数字娱乐空间 · 用技术连接娱乐与未来',
       viewPositions: '查看招聘岗位',
       learnMore: '了解我们'
