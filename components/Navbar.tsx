@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../logo.png';
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,11 +18,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: '首页', path: '/' },
-    { name: '关于我们', path: '/about' },
-    { name: '企业文化', path: '/culture' },
-    { name: '加入我们', path: '/careers' },
-    { name: '联系我们', path: '/contact' },
+    { name: t.nav.home, path: '/' },
+    { name: t.nav.about, path: '/about' },
+    { name: t.nav.culture, path: '/culture' },
+    { name: t.nav.careers, path: '/careers' },
+    { name: t.nav.contact, path: '/contact' },
   ];
 
   return (
@@ -54,8 +57,9 @@ const Navbar: React.FC = () => {
             to="/careers"
             className="px-6 py-2 bg-white text-black text-xs font-bold rounded-full hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg"
           >
-            Hiring
+            {t.nav.hiring}
           </Link>
+          <LanguageSwitcher />
         </div>
 
         <div className="md:hidden text-white">

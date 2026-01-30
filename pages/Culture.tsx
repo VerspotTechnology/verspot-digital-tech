@@ -1,24 +1,26 @@
 
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Culture: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="pt-40 pb-32 bg-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-32">
-          <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">企业文化</h1>
+          <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">{t.culture.title}</h1>
           <p className="text-xl text-gray-500 font-light max-w-2xl mx-auto">
-            我们致力于创造一个让创意自由流动的空间，一个技术人能在这里找到归属感的家园。
+            {t.culture.intro}
           </p>
         </div>
 
         {/* Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-32">
           {[
-            { title: "尊重创意", desc: "每一个伟大的产品都始于一个大胆的念头。" },
-            { title: "反内耗", desc: "用代码和逻辑解决问题，而非办公室政治。" },
-            { title: "扁平沟通", desc: "你随时可以和任何人探讨你的最新发现。" },
-            { title: "拒绝形式主义", desc: "我们更在乎产出的价值，而非考勤的时间。" }
+            { title: t.culture.values.item1.title, desc: t.culture.values.item1.description },
+            { title: t.culture.values.item2.title, desc: t.culture.values.item2.description },
+            { title: t.culture.values.item3.title, desc: t.culture.values.item3.description }
           ].map((v, i) => (
             <div key={i} className="bg-glass p-8 rounded-2xl hover:bg-white/5 transition-colors group">
               <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">

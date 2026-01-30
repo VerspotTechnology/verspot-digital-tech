@@ -1,15 +1,18 @@
 
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="pt-40 pb-32">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h1 className="text-5xl md:text-8xl font-black mb-12 tracking-tighter">联系我们</h1>
+            <h1 className="text-5xl md:text-8xl font-black mb-12 tracking-tighter">{t.contact.title}</h1>
             <p className="text-xl text-gray-500 font-light mb-12 max-w-lg">
-              无论是商务合作、媒体采访还是人才交流，我们都欢迎你的来信。
+              {t.contact.intro}
             </p>
 
             <div className="space-y-10">
