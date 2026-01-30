@@ -10,7 +10,7 @@ const Culture: React.FC = () => {
     <div className="relative min-h-screen bg-black">
       {/* Starfield Background */}
       <Starfield />
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 py-32">
         <div className="text-center mb-32">
           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter">{t.culture.title}</h1>
           <p className="text-xl text-gray-500 font-light max-w-2xl mx-auto">
