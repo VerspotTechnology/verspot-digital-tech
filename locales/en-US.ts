@@ -62,20 +62,55 @@ export const enUS = {
     title: 'Company Culture',
     subtitle: 'OUR CULTURE',
     intro: 'At Verspot, we believe that excellent corporate culture is the source of innovation. Our values shape how we work, how we make decisions, and how we grow.',
+    mission: 'We are committed to creating a digital entertainment universe that integrates games, art, and interactive experiences, connecting creators and players, allowing everyone to freely express, co-create, and happily explore within it.',
+    vision: 'To become the most influential virtual entertainment community in the world, building a digital civilization that everyone can enter, participate in, and own.',
     values: {
-      title: 'Our Values',
-      item1: {
-        title: 'Open and Transparent',
-        description: 'We encourage open communication and transparent decision-making processes. Every idea deserves to be heard, and every voice should be respected.'
-      },
-      item2: {
-        title: 'Continuous Learning',
-        description: 'Technology is evolving rapidly, and we always maintain a learning attitude. We encourage team members to constantly explore new technologies and methods, growing together.'
-      },
-      item3: {
-        title: 'Collaboration and Win-Win',
-        description: 'We believe in the power of teamwork. Through cross-departmental collaboration, we can create results that go beyond individual capabilities.'
-      }
+      title: 'Core Values',
+      items: [
+        {
+          icon: '🪐',
+          title: 'Co-Creation',
+          description: 'Every user is a content builder, and the soul of the community is ignited together by everyone.'
+        },
+        {
+          icon: '🎮',
+          title: 'Play is Culture',
+          description: 'We believe that entertainment is not just pastime; it carries thoughts, connects humans, and is the form of future culture.'
+        },
+        {
+          icon: '✨',
+          title: 'Immersion & Authenticity',
+          description: 'Whether it\'s characters, spaces, or emotions, what we pursue is immersive authentic experiences.'
+        },
+        {
+          icon: '🤝',
+          title: 'Connection',
+          description: 'Breaking down isolated experiences, allowing players and creators from around the world to form real relationships in the community.'
+        },
+        {
+          icon: '🚀',
+          title: 'Expandability',
+          description: 'We believe that the platform is a living universe that should constantly evolve, grow, and expand without boundaries.'
+        }
+      ]
+    },
+    weBelieve: {
+      title: 'We Believe',
+      items: [
+        'Entertainment is not a "product", but a cultural ecosystem;',
+        'Community is not an "accessory", but the "core";',
+        'Truly meaningful experiences come from spaces of freedom, equality, and self-expression;',
+        'A boundless digital universe will become the stage for the next generation of human culture.'
+      ]
+    },
+    culturalCode: {
+      title: 'Our Cultural Code',
+      items: [
+        'All members are creators, not executors.',
+        'Embrace experimentation, embrace diversity, and always maintain curiosity.',
+        'Respect every user\'s creativity and right to expression.',
+        'Dare to define new paradigms, not repeat the old world.'
+      ]
     },
     atmosphere: {
       title: 'About Working Atmosphere',

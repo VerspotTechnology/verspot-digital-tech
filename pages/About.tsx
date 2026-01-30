@@ -25,7 +25,7 @@ const About: React.FC = () => {
 
             <div className="mt-20 grid grid-cols-2 gap-10">
               <div>
-                <div className="text-4xl font-bold text-white mb-2">2024</div>
+                <div className="text-4xl font-bold text-white mb-2">2025</div>
                 <div className="text-xs text-gray-500 uppercase tracking-widest">{t.about.founded}</div>
               </div>
               <div>
