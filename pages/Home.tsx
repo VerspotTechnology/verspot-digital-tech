@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import heroLogo from '../hero-logo.png';
 
 const Home: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Home: React.FC = () => {
           {/* Hero Image Logo */}
           <div className="mb-6 flex justify-center animate-fade-in">
              <img 
-               src="hero-logo.png" 
+               src={heroLogo} 
                alt="Verspot Hero Logo" 
                className="h-32 md:h-64 w-auto object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)]"
              />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../logo.png';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbar: React.FC = () => {
         <Link to="/" className="flex items-center group transition-transform hover:scale-105 active:scale-95">
           {/* Logo Image */}
           <img 
-            src="logo.png" 
+            src={logo} 
             alt="Verspot Logo" 
             className="h-10 w-auto object-contain"
             onError={(e) => {

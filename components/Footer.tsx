@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="mb-6">
               <img 
-                src="logo.png" 
+                src={logo} 
                 alt="Verspot Logo" 
                 className="h-12 w-auto object-contain brightness-90 grayscale hover:grayscale-0 transition-all"
               />
