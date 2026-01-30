@@ -325,7 +325,7 @@ export const enUS = {
       submit: 'Send Message'
     },
     info: {
-      email: 'verspot@163.com',
+      email: 'official@verspot.cn',
       location: 'Handan City, Hebei Province',
       hours: 'Weekdays 9:00 - 18:00'
     },
@@ -344,7 +344,7 @@ export const enUS = {
   footer: {
     navigation: 'Navigation',
     contact: 'Contact',
-    email: 'verspot@163.com',
+    email: 'official@verspot.cn',
     location: 'Handan City, Hebei Province',
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: 'Legal Notice',

@@ -85,8 +85,8 @@ const Careers: React.FC = () => {
                 </div>
 
                 <div className="mt-12 flex justify-between items-center border-t border-white/5 pt-8">
-                  <p className="text-xs text-gray-500">{language === 'en-US' ? 'Please send your resume to:' : '简历请发送至:'} <span className="text-white">verspot@163.com</span></p>
-                  <a href="mailto:verspot@163.com" className="px-8 py-3 bg-white text-black text-xs font-bold rounded-full group-hover:scale-105 transition-transform">
+                  <p className="text-xs text-gray-500">{language === 'en-US' ? 'Please send your resume to:' : '简历请发送至:'} <span className="text-white">official@verspot.cn</span></p>
+                  <a href="mailto:official@verspot.cn" className="px-8 py-3 bg-white text-black text-xs font-bold rounded-full group-hover:scale-105 transition-transform">
                     {language === 'en-US' ? 'Apply Now' : '申请岗位'}
                   </a>
                 </div>
@@ -104,7 +104,7 @@ const Careers: React.FC = () => {
           <p className="text-gray-400 mb-8 max-w-lg mx-auto text-sm leading-relaxed">
             {t.careers.noMatch.description || "如果你觉得自己与 Verspot 的基因完美契合，请将你的简历和自荐信发送至邮箱，我们期待与任何天才相遇。"}
           </p>
-          <a href="mailto:verspot@163.com" className="text-white font-bold border-b border-white hover:text-blue-400 transition-colors">
+          <a href="mailto:official@verspot.cn" className="text-white font-bold border-b border-white hover:text-blue-400 transition-colors">
             {t.careers.noMatch.apply || "投递自由岗位 →"}
           </a>
         </div>

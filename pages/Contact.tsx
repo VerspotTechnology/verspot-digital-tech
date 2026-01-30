@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
               <div>
                 <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">{t.contact.labels.email}</h4>
                 <p className="text-2xl font-medium text-white hover:text-blue-500 transition-colors">
-                  <a href="mailto:verspot@163.com">{t.contact.info.email}</a>
+                  <a href="mailto:official@verspot.cn">{t.contact.info.email}</a>
                 </p>
               </div>
               <div>

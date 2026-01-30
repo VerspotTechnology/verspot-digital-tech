@@ -325,7 +325,7 @@ export const zhCN = {
       submit: '发送消息'
     },
     info: {
-      email: 'verspot@163.com',
+      email: 'official@verspot.cn',
       location: '河北省邯郸市',
       hours: '工作日 9:00 - 18:00'
     },
@@ -344,7 +344,7 @@ export const zhCN = {
   footer: {
     navigation: '导航',
     contact: '联系方式',
-    email: 'verspot@163.com',
+    email: 'official@verspot.cn',
     location: '河北省邯郸市',
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: '法律声明',
