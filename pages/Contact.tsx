@@ -1,10 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Starfield from '../components/Starfield';
 
 const Contact: React.FC = () => {
   const { t } = useLanguage();
+  const [showWechatModal, setShowWechatModal] = useState(false);
 
   return (
     <div className="relative min-h-screen bg-black">
@@ -37,6 +38,7 @@ const Contact: React.FC = () => {
                     alt="企业微信名片" 
                     className="w-48 h-auto rounded-lg hover:scale-105 transition-transform cursor-pointer"
                     title="扫描二维码添加企业微信"
+                    onClick={() => setShowWechatModal(true)}
                   />
                   <p className="text-xs text-gray-500 mt-4 text-center">扫描二维码添加企业微信</p>
                 </div>
@@ -77,6 +79,26 @@ const Contact: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {/* WeChat Card Modal */}
+      {showWechatModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
+          <div className="relative max-w-2xl w-full">
+            <img 
+              src="/assets/wechat-card.jpg" 
+              alt="企业微信名片" 
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+            <button 
+              onClick={() => setShowWechatModal(false)}
+              className="absolute top-4 right-4 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors shadow-lg"
+            >
+              ×
+            </button>
+            <p className="text-white text-center mt-6 text-sm">扫描二维码添加企业微信</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
