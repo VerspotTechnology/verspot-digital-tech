@@ -13,7 +13,7 @@ const Home: React.FC = () => {
 
         <div className="relative z-10 text-center px-6 max-w-5xl">
           {/* Hero Image Logo */}
-          <div className="mb-12 flex justify-center animate-fade-in">
+          <div className="mb-6 flex justify-center animate-fade-in">
              <img 
                src="hero-logo.png" 
                alt="Verspot Hero Logo" 
