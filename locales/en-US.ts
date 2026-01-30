@@ -250,6 +250,32 @@ export const enUS = {
           'Passionate about games and quality assurance'
         ],
         location: 'Handan'
+      },
+      {
+        id: '11',
+        title: 'Actor/Actress for Corporate Culture Video',
+        category: 'Content & Design',
+        description: 'Participate in the shooting of Verspot\'s corporate culture promotional videos, showcasing the company\'s values and working atmosphere.',
+        requirements: [
+          'Good appearance and expressive ability',
+          'Experience in acting or modeling is preferred',
+          'Ability to understand and convey corporate culture',
+          'Available for part-time shooting schedule'
+        ],
+        location: 'Handan'
+      },
+      {
+        id: '12',
+        title: 'Model for Corporate Branding',
+        category: 'Content & Design',
+        description: 'Serve as a model for Verspot\'s corporate branding materials, including promotional videos, photoshoots, and marketing campaigns.',
+        requirements: [
+          'Professional modeling experience',
+          'Good physical condition and temperament',
+          'Ability to work well with photographers and directors',
+          'Willing to participate in multiple shooting sessions'
+        ],
+        location: 'Handan'
       }
     ]
   },

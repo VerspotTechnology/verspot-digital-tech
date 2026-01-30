@@ -235,6 +235,32 @@ export const zhCN = {
           '热爱游戏和质量保证工作'
         ],
         location: '邯郸'
+      },
+      {
+        id: '11',
+        title: '企业文化宣传片演员',
+        category: '内容与设计',
+        description: '参与 Verspot 企业文化宣传片的拍摄，展示公司的价值观和工作氛围。',
+        requirements: [
+          '形象良好，表现力强',
+          '有表演或模特经验者优先',
+          '能够理解并传达企业文化',
+          '可参与兼职拍摄日程'
+        ],
+        location: '邯郸'
+      },
+      {
+        id: '12',
+        title: '企业品牌模特',
+        category: '内容与设计',
+        description: '担任 Verspot 企业品牌材料的模特，包括宣传片、照片拍摄和营销活动。',
+        requirements: [
+          '专业模特经验',
+          '良好的体态和气质',
+          '能够与摄影师和导演良好配合',
+          '愿意参与多次拍摄 session'
+        ],
+        location: '邯郸'
       }
     ]
   },
