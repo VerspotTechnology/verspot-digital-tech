@@ -82,25 +82,161 @@ export const zhCN = {
     title: '加入我们',
     subtitle: 'JOIN US',
     intro: '如果你热爱游戏、热衷于技术创新，并且想要在一个充满激情的环境中工作，那么 Verspot 就是你的理想之地。',
-    benefits: {
-      title: '我们提供',
-      item1: '有竞争力的薪酬和福利',
-      item2: '灵活的工作时间和远程办公',
-      item3: '丰富的学习和成长机会',
-      item4: '开放和包容的工作环境'
-    },
-    positions: {
-      title: '开放职位',
-      frontend: '前端开发工程师',
-      backend: '后端开发工程师',
-      game: '游戏开发工程师',
-      uiux: 'UI/UX 设计师'
+    quote: '"我们相信，对战不是敌意，而是玩家之间最真实的交流方式。"',
+    categories: ['全部', '技术', '内容与设计', '运营与产品'],
+    jobLabels: {
+      category: '分类',
+      title: '职位',
+      location: '工作地点',
+      description: '职位描述',
+      requirements: '任职要求',
+      email: '请将简历发送至：',
+      apply: '立即申请'
     },
     noMatch: {
       title: '没找到合适的？',
       description: '如果你觉得自己与 Verspot 的基因完美契合，请将你的简历和自荐信发送至邮箱，我们期待与任何天才相遇。',
       apply: '投递自由岗位 →'
-    }
+    },
+    jobDetails: {
+      description: '工作职责',
+      requirements: '任职要求',
+      apply: '申请职位',
+      emailLabel: '请将简历发送至：',
+      noPositions: '该分类暂无开放职位，敬请期待。'
+    },
+    jobs: [
+      {
+        id: '1',
+        title: '前端开发工程师（React/TS）',
+        category: '技术',
+        description: '负责 Verspot 核心产品的 Web 开发，构建高性能、具有未来感的交互界面。',
+        requirements: [
+          '精通 React、TypeScript、Tailwind CSS',
+          '对 WebGL 或交互动画有浓厚兴趣',
+          '良好的工程意识，注重代码质量',
+          '3年以上前端开发经验或优秀应届毕业生'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '2',
+        title: '游戏设计师',
+        category: '内容与设计',
+        description: '负责数字娱乐体验的核心逻辑设计，构建丰富的游戏机制和社区互动模型。',
+        requirements: [
+          '对各类数字娱乐产品有深入研究',
+          '较强的逻辑思维和文档能力',
+          '能够跨部门沟通并推动创意落地',
+          '有数值设计或关卡设计经验者优先'
+        ],
+        location: '邯郸'
+      },
+      {
+        id: '3',
+        title: 'UI/视觉设计师',
+        category: '内容与设计',
+        description: '定义 Verspot 宇宙的视觉语言，从 Logo 到复杂的交互面板，实现顶级的科技美学。',
+        requirements: [
+          '扎实的平面设计和交互设计基础',
+          '熟练使用 Figma、PS、AE 等工具',
+          '对未来感、极简风格有深刻理解',
+          '能够将抽象概念转化为高质量视觉稿'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '4',
+        title: '产品助理',
+        category: '运营与产品',
+        description: '协助产品经理进行市场调研、数据分析和原型设计，把控产品迭代细节。',
+        requirements: [
+          '较强的执行力和学习能力',
+          '对数字娱乐市场趋势敏感',
+          '熟练使用原型工具和办公软件',
+          '优秀的沟通协调能力'
+        ],
+        location: '邯郸'
+      },
+      {
+        id: '5',
+        title: '后端开发工程师（Node.js）',
+        category: '技术',
+        description: '负责构建 Verspot 数字娱乐平台的可扩展后端系统，包括 API 设计、数据库优化和系统架构。',
+        requirements: [
+          '精通 Node.js、Express/Koa、MongoDB/MySQL',
+          '有微服务架构和云部署经验',
+          '深入理解 RESTful API 设计原则',
+          '2年以上后端开发经验'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '6',
+        title: '游戏开发工程师（Unity）',
+        category: '技术',
+        description: '使用 Unity 引擎开发交互式游戏和体验，创建引人入胜的游戏机制并优化性能。',
+        requirements: [
+          '精通 Unity、C# 编程',
+          '有 3D 建模和动画管线经验',
+          '了解游戏物理和 AI 实现',
+          '1年以上 Unity 开发经验或相关项目'
+        ],
+        location: '邯郸'
+      },
+      {
+        id: '7',
+        title: '全栈开发工程师',
+        category: '技术',
+        description: '为 Verspot 的数字娱乐生态系统构建端到端解决方案，同时负责前端和后端技术。',
+        requirements: [
+          '同时精通前端（React、TypeScript）和后端（Node.js、数据库）',
+          '有 DevOps 和 CI/CD 流水线经验',
+          '较强的问题解决能力和系统设计能力',
+          '3年以上全栈开发经验'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '8',
+        title: '游戏美术师',
+        category: '内容与设计',
+        description: '为 Verspot 的游戏和数字体验创建精美的视觉资产，包括角色、场景和 UI 元素。',
+        requirements: [
+          '熟练使用 3D 建模软件（Blender、Maya）或 2D 美术工具',
+          '深入理解游戏美术管线',
+          '能够创建符合所需美术风格的资产',
+          '有游戏相关美术作品 portfolio'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '9',
+        title: 'DevOps 工程师',
+        category: '技术',
+        description: '负责构建和维护 Verspot 的 CI/CD 流水线、基础设施自动化和云部署策略。',
+        requirements: [
+          '有 Docker、Kubernetes、AWS/GCP 经验',
+          '熟练使用脚本语言（Python、Bash）',
+          '了解监控和日志系统',
+          '2年以上 DevOps 经验'
+        ],
+        location: '邯郸 / 远程'
+      },
+      {
+        id: '10',
+        title: 'QA 工程师（游戏测试）',
+        category: '技术',
+        description: '通过全面测试、bug 报告和性能分析，确保 Verspot 游戏和数字产品的质量。',
+        requirements: [
+          '有游戏测试或软件 QA 经验',
+          '较强的细节关注和问题解决能力',
+          '能够创建测试用例和复现 bug',
+          '热爱游戏和质量保证工作'
+        ],
+        location: '邯郸'
+      }
+    ]
   },
   contact: {
     title: '联系我们',

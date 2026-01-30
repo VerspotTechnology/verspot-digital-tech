@@ -172,6 +172,84 @@ export const enUS = {
           'Excellent communication and coordination skills'
         ],
         location: 'Handan'
+      },
+      {
+        id: '5',
+        title: 'Backend Developer (Node.js)',
+        category: 'Technical',
+        description: 'Responsible for building scalable backend systems for Verspot\'s digital entertainment platform, including API design, database optimization and system architecture.',
+        requirements: [
+          'Proficient in Node.js, Express/Koa, MongoDB/MySQL',
+          'Experience with microservices architecture and cloud deployment',
+          'Strong understanding of RESTful API design principles',
+          '2+ years of backend development experience'
+        ],
+        location: 'Handan / Remote'
+      },
+      {
+        id: '6',
+        title: 'Game Developer (Unity)',
+        category: 'Technical',
+        description: 'Responsible for developing interactive games and experiences using Unity engine, creating engaging gameplay mechanics and optimizing performance.',
+        requirements: [
+          'Proficient in Unity, C# programming',
+          'Experience with 3D modeling and animation pipelines',
+          'Knowledge of game physics and AI implementation',
+          '1+ years of Unity development experience or relevant projects'
+        ],
+        location: 'Handan'
+      },
+      {
+        id: '7',
+        title: 'Full Stack Developer',
+        category: 'Technical',
+        description: 'Build end-to-end solutions for Verspot\'s digital entertainment ecosystem, working on both frontend and backend technologies.',
+        requirements: [
+          'Proficient in both frontend (React, TypeScript) and backend (Node.js, databases)',
+          'Experience with DevOps and CI/CD pipelines',
+          'Strong problem-solving skills and system design能力',
+          '3+ years of full stack development experience'
+        ],
+        location: 'Handan / Remote'
+      },
+      {
+        id: '8',
+        title: 'Game Artist',
+        category: 'Content & Design',
+        description: 'Create stunning visual assets for Verspot\'s games and digital experiences, including characters, environments, and UI elements.',
+        requirements: [
+          'Proficient in 3D modeling software (Blender, Maya) or 2D art tools',
+          'Strong understanding of game art pipelines',
+          'Ability to create assets that match the desired art style',
+          'Portfolio showcasing game-related artwork'
+        ],
+        location: 'Handan / Remote'
+      },
+      {
+        id: '9',
+        title: 'DevOps Engineer',
+        category: 'Technical',
+        description: 'Responsible for building and maintaining Verspot\'s CI/CD pipelines, infrastructure automation, and cloud deployment strategies.',
+        requirements: [
+          'Experience with Docker, Kubernetes, AWS/GCP',
+          'Proficient in scripting languages (Python, Bash)',
+          'Knowledge of monitoring and logging systems',
+          '2+ years of DevOps experience'
+        ],
+        location: 'Handan / Remote'
+      },
+      {
+        id: '10',
+        title: 'QA Engineer (Game Testing)',
+        category: 'Technical',
+        description: 'Ensure the quality of Verspot\'s games and digital products through comprehensive testing, bug reporting, and performance analysis.',
+        requirements: [
+          'Experience in game testing or software QA',
+          'Strong attention to detail and problem-solving skills',
+          'Ability to create test cases and reproduce bugs',
+          'Passionate about games and quality assurance'
+        ],
+        location: 'Handan'
       }
     ]
   },
