@@ -83,14 +83,14 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              <div className="aspect-square bg-white/[0.02] rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] border border-white/10 p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col justify-end group hover:bg-white/[0.05] transition-all">
-                <div className="text-[clamp(0.8rem,3vw,2.5rem)] font-black mb-2 metallic-text">COMMUNITY</div>
-                <div className="text-xs text-gray-500 uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold">{t.home.business.community}</div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+              <div className="aspect-square bg-white/[0.02] rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end group hover:bg-white/[0.05] transition-all">
+                <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">COMMUNITY</div>
+                <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.community}</div>
               </div>
-              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[1.5rem] sm:rounded-[2rem] md:rounded-[2.5rem] border border-white/10 p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col justify-end sm:mt-12 md:mt-16 group hover:from-blue-800/30 transition-all">
-                <div className="text-[clamp(0.8rem,3vw,2.5rem)] font-black mb-2 metallic-text">FUTURE</div>
-                <div className="text-xs text-gray-500 uppercase tracking-[0.2em] sm:tracking-[0.3em] font-bold">{t.home.business.future}</div>
+              <div className="aspect-[3/4] bg-gradient-to-tr from-blue-900/20 to-transparent rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2rem] lg:rounded-[2.5rem] border border-white/10 p-2 sm:p-3 md:p-4 lg:p-6 flex flex-col justify-end sm:mt-8 md:mt-12 lg:mt-16 group hover:from-blue-800/30 transition-all">
+                <div className="text-[clamp(0.6rem,2vw,2rem)] font-black mb-1 sm:mb-2 metallic-text">FUTURE</div>
+                <div className="text-xs text-gray-500 uppercase tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] font-bold">{t.home.business.future}</div>
               </div>
             </div>
           </div>
