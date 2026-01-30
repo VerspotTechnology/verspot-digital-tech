@@ -31,8 +31,14 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">{t.contact.labels.wechat}</h4>
-                <div className="inline-block px-4 py-2 border border-white/10 rounded-lg bg-white/5 text-sm text-gray-400">
-                  {t.contact.labels.wechatDesc}
+                <div className="p-4 border border-white/10 rounded-lg bg-white/5">
+                  <img 
+                    src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20WeChat%20business%20card%20for%20Verspot%20Technology%20with%20company%20logo%2C%20name%20Li%20JiaLe%2C%20company%20name%20Hebei%20Verspot%20Digital%20Technology%20Co.%2C%20Ltd.%2C%20email%20official%40verspot.cn%2C%20and%20WeChat%20QR%20code%20on%20black%20and%20white%20background&image_size=square" 
+                    alt="企业微信名片" 
+                    className="w-48 h-auto rounded-lg hover:scale-105 transition-transform cursor-pointer"
+                    title="扫描二维码添加企业微信"
+                  />
+                  <p className="text-xs text-gray-500 mt-4 text-center">扫描二维码添加企业微信</p>
                 </div>
               </div>
             </div>
