@@ -32,7 +32,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-sm text-gray-500">
               <li>verspot@163.com</li>
               <li>河北省邯郸市</li>
-              <li>冀ICP备20240001号-1</li>
             </ul>
           </div>
         </div>
