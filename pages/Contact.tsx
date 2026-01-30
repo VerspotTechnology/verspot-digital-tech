@@ -17,19 +17,19 @@ const Contact: React.FC = () => {
 
             <div className="space-y-10">
               <div>
-                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">官方邮箱</h4>
+                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">{t.contact.labels.email}</h4>
                 <p className="text-2xl font-medium text-white hover:text-blue-500 transition-colors">
-                  <a href="mailto:verspot@163.com">verspot@163.com</a>
+                  <a href="mailto:verspot@163.com">{t.contact.info.email}</a>
                 </p>
               </div>
               <div>
-                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">办公地址</h4>
-                <p className="text-2xl font-medium text-white">河北省邯郸市</p>
+                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">{t.contact.labels.location}</h4>
+                <p className="text-2xl font-medium text-white">{t.contact.info.location}</p>
               </div>
               <div>
-                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">官方微信</h4>
+                <h4 className="text-xs uppercase tracking-widest text-gray-600 font-bold mb-4">{t.contact.labels.wechat}</h4>
                 <div className="inline-block px-4 py-2 border border-white/10 rounded-lg bg-white/5 text-sm text-gray-400">
-                  扫码添加 (暂未开放)
+                  {t.contact.labels.wechatDesc}
                 </div>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
                 <div className="w-16 h-16 bg-white text-black rounded-full flex items-center justify-center font-bold mb-6 mx-auto animate-pulse">
                   V
                 </div>
-                <p className="text-xs uppercase tracking-widest text-gray-500 font-black">Hebei Dianyuan Digital Tech</p>
+                <p className="text-xs uppercase tracking-widest text-gray-500 font-black">Verspot Technology (China) Co., Ltd.</p>
                 <p className="text-gray-400 mt-2">Connecting from the heart of Handan</p>
               </div>
               {/* Decoration lines */}
@@ -60,11 +60,11 @@ const Contact: React.FC = () => {
 
         <div className="mt-32 p-12 bg-white text-black rounded-3xl flex flex-col md:flex-row justify-between items-center gap-8">
           <div>
-            <h3 className="text-3xl font-bold mb-2">准备好开启新征程了吗？</h3>
-            <p className="text-gray-600">加入河北点域，共同构建 Verspot 数字未来。</p>
+            <h3 className="text-3xl font-bold mb-2">{t.contact.cta.title}</h3>
+            <p className="text-gray-600">{t.contact.cta.subtitle}</p>
           </div>
           <button onClick={() => window.location.hash = '#/careers'} className="px-12 py-5 bg-black text-white font-bold rounded-full hover:scale-105 transition-transform active:scale-95 shadow-2xl">
-            立即投递简历
+            {t.contact.cta.button}
           </button>
         </div>
       </div>

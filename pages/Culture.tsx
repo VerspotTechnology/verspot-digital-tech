@@ -35,17 +35,18 @@ const Culture: React.FC = () => {
         {/* Atmosphere */}
         <div className="bg-white text-black p-12 md:p-24 rounded-3xl">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-bold mb-12">关于工作氛围</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-12">{t.culture.atmosphere.title}</h2>
             <div className="space-y-8 text-lg text-gray-700 leading-relaxed italic">
-              <p>“我们不追求无意义的加班，我们尊重每一位成员的时间与专业判断。”</p>
-              <p>“点域没有‘打工人’，只有共同构建 Verspot 宇宙的‘造物者’。”</p>
+              {t.culture.atmosphere.quotes.map((quote, i) => (
+                <p key={i}>{quote}</p>
+              ))}
             </div>
             <div className="mt-16 border-l-4 border-black pl-8 py-2">
-              <h4 className="text-sm uppercase tracking-[0.3em] font-black mb-2">We Hope You Are</h4>
+              <h4 className="text-sm uppercase tracking-[0.3em] font-black mb-2">{t.culture.atmosphere.weHopeYouAre.title}</h4>
               <ul className="space-y-2 text-gray-600">
-                <li>对技术 / 游戏 / 内容有源于心底的兴趣</li>
-                <li>具备长期主义思维，不急于求成</li>
-                <li>能够独立思考，敢于挑战常规</li>
+                {t.culture.atmosphere.weHopeYouAre.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
               </ul>
             </div>
           </div>

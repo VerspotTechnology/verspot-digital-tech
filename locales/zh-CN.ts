@@ -9,7 +9,7 @@ export const zhCN = {
   },
   home: {
     hero: {
-      title: '河北省点域数字科技责任有限公司',
+      title: 'Verspot Technology (China) Co., Ltd.',
       subtitle: '构建多元数字娱乐空间 · 用技术连接娱乐与未来',
       viewPositions: '查看招聘岗位',
       learnMore: '了解我们'
@@ -47,9 +47,9 @@ export const zhCN = {
     }
   },
   about: {
-    title: '关于点域数字',
+    title: '关于 Verspot',
     subtitle: 'ABOUT US',
-    intro1: '河北省点域数字科技责任有限公司成立于科技飞速迭代的时代，我们深耕于数字娱乐与互动技术的前沿阵地。',
+    intro1: 'Verspot Technology (China) Co., Ltd. 成立于科技飞速迭代的时代，我们深耕于数字娱乐与互动技术的前沿阵地。',
     intro2: '我们不仅仅是一家技术开发公司，更是一群热爱游戏、崇尚创意的极客聚集地。通过 Verspot 品牌，我们致力于打造连接个体、激发对战、深化社交的多元宇宙数字空间。',
     founded: '创立于邯郸',
     innovation: '创新驱动',
@@ -105,7 +105,7 @@ export const zhCN = {
   contact: {
     title: '联系我们',
     subtitle: 'GET IN TOUCH',
-    intro: '无论你有任何问题、建议或合作意向，我们都欢迎你与我们联系。',
+    intro: '无论您有任何问题、建议或合作意向，我们都欢迎您与我们联系。',
     form: {
       name: '姓名',
       email: '邮箱',
@@ -116,14 +116,25 @@ export const zhCN = {
       email: 'verspot@163.com',
       location: '河北省邯郸市',
       hours: '工作日 9:00 - 18:00'
+    },
+    labels: {
+      email: '官方邮箱',
+      location: '办公地址',
+      wechat: '官方微信',
+      wechatDesc: '扫码添加 (暂未开放)'
+    },
+    cta: {
+      title: '准备好开启新征程了吗？',
+      subtitle: '加入河北点域，共同构建 Verspot 数字未来。',
+      button: '立即投递简历'
     }
   },
   footer: {
     navigation: '导航',
-    contact: '联系',
+    contact: '联系方式',
     email: 'verspot@163.com',
     location: '河北省邯郸市',
-    copyright: '© 2025 河北省点域数字科技责任有限公司. All rights reserved.',
+    copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: '法律声明',
     privacy: '隐私政策'
   }
