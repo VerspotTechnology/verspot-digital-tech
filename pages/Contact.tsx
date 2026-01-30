@@ -82,8 +82,14 @@ const Contact: React.FC = () => {
 
       {/* WeChat Card Modal */}
       {showWechatModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-2xl w-full">
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4"
+          onClick={() => setShowWechatModal(false)}
+        >
+          <div 
+            className="relative max-w-md w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img 
               src="/assets/wechat-card.jpg" 
               alt="企业微信名片" 
@@ -91,7 +97,7 @@ const Contact: React.FC = () => {
             />
             <button 
               onClick={() => setShowWechatModal(false)}
-              className="absolute top-4 right-4 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors shadow-lg"
+              className="absolute top-4 right-4 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center font-bold hover:bg-gray-200 transition-colors shadow-lg"
             >
               ×
             </button>
