@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroLogo from '../hero-logo.png';
+import heroLogoCN from '../hero-logo-CN.png';
+import heroLogoEN from '../hero-logo-EN.png';
 import { useLanguage } from '../contexts/LanguageContext';
 import Starfield from '../components/Starfield';
 
 const Home: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="relative">
@@ -22,8 +23,8 @@ const Home: React.FC = () => {
           {/* Hero Image Logo */}
           <div className="mb-6 flex justify-center">
              <img 
-               src={heroLogo} 
-               alt="Verspot Hero Logo" 
+               src={language === 'zh-CN' ? heroLogoCN : heroLogoEN} 
+               alt={language === 'zh-CN' ? '点域科技' : 'Verspot'} 
                className="h-32 md:h-64 w-auto object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.15)] animate-pop-in"
              />
           </div>
