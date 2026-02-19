@@ -60,77 +60,79 @@ const Starfield: React.FC = () => {
       radius: number;
       speedX: number;
       speedY: number;
-      colors: string[];
+      color: string;
       glowColor: string;
-      rotation: number;
-      rotationSpeed: number;
+      opacity: number;
+      pulsePhase: number;
 
       constructor() {
-        this.radius = Math.random() * 30 + 20;
-        this.x = Math.random() * (canvas.width - this.radius * 2) + this.radius;
-        this.y = Math.random() * (canvas.height - this.radius * 2) + this.radius;
-        this.speedX = (Math.random() - 0.5) * 0.3;
-        this.speedY = (Math.random() - 0.5) * 0.3;
-        this.rotation = 0;
-        this.rotationSpeed = (Math.random() - 0.5) * 0.02;
+        this.radius = Math.random() * 15 + 8;
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.speedX = (Math.random() - 0.5) * 0.15;
+        this.speedY = (Math.random() - 0.5) * 0.15;
+        this.opacity = Math.random() * 0.3 + 0.1;
+        this.pulsePhase = Math.random() * Math.PI * 2;
 
-        const colorPalettes = [
-          ['#4F46E5', '#7C3AED', '#8B5CF6'],
-          ['#06B6D4', '#0891B2', '#0E7490'],
-          ['#EC4899', '#DB2777', '#BE185D'],
-          ['#F59E0B', '#D97706', '#B45309'],
-          ['#10B981', '#059669', '#047857'],
-          ['#6366F1', '#4F46E5', '#4338CA']
+        const colors = [
+          { main: '#6366F1', glow: '#818CF8' },
+          { main: '#8B5CF6', glow: '#A78BFA' },
+          { main: '#EC4899', glow: '#F472B6' },
+          { main: '#06B6D4', glow: '#22D3EE' },
+          { main: '#10B981', glow: '#34D399' },
+          { main: '#F59E0B', glow: '#FBBF24' }
         ];
-        this.colors = colorPalettes[Math.floor(Math.random() * colorPalettes.length)];
-        this.glowColor = this.colors[0];
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        this.color = color.main;
+        this.glowColor = color.glow;
       }
 
       update() {
         this.x += this.speedX;
         this.y += this.speedY;
-        this.rotation += this.rotationSpeed;
+        this.pulsePhase += 0.02;
 
-        if (this.x < -this.radius) this.x = canvas.width + this.radius;
-        if (this.x > canvas.width + this.radius) this.x = -this.radius;
-        if (this.y < -this.radius) this.y = canvas.height + this.radius;
-        if (this.y > canvas.height + this.radius) this.y = -this.radius;
+        if (this.x < -this.radius * 2) this.x = canvas.width + this.radius * 2;
+        if (this.x > canvas.width + this.radius * 2) this.x = -this.radius * 2;
+        if (this.y < -this.radius * 2) this.y = canvas.height + this.radius * 2;
+        if (this.y > canvas.height + this.radius * 2) this.y = -this.radius * 2;
       }
 
       draw() {
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.rotation);
+        const pulse = Math.sin(this.pulsePhase) * 0.1 + 0.9;
+        const currentRadius = this.radius * pulse;
 
-        const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, this.radius);
-        gradient.addColorStop(0, this.colors[0]);
-        gradient.addColorStop(0.5, this.colors[1]);
-        gradient.addColorStop(1, this.colors[2]);
+        ctx.save();
+
+        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, currentRadius);
+        gradient.addColorStop(0, this.color);
+        gradient.addColorStop(0.4, this.color + '80');
+        gradient.addColorStop(1, this.color + '00');
 
         ctx.fillStyle = gradient;
         ctx.beginPath();
-        ctx.arc(0, 0, this.radius, 0, Math.PI * 2);
+        ctx.arc(this.x, this.y, currentRadius, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.restore();
-
-        const glowGradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius * 2);
-        glowGradient.addColorStop(0, this.glowColor + '40');
-        glowGradient.addColorStop(0.5, this.glowColor + '20');
+        const glowGradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, currentRadius * 3);
+        glowGradient.addColorStop(0, this.glowColor + '30');
+        glowGradient.addColorStop(0.5, this.glowColor + '10');
         glowGradient.addColorStop(1, this.glowColor + '00');
 
         ctx.fillStyle = glowGradient;
         ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius * 2, 0, Math.PI * 2);
+        ctx.arc(this.x, this.y, currentRadius * 3, 0, Math.PI * 2);
         ctx.fill();
+
+        ctx.restore();
       }
     }
 
     // Create stars and planets
     const stars: Star[] = [];
     const planets: Planet[] = [];
-    const starCount = Math.floor(canvas.width * canvas.height / 10000);
-    const planetCount = Math.floor(Math.random() * 3) + 2;
+    const starCount = Math.floor(canvas.width * canvas.height / 8000);
+    const planetCount = Math.floor(Math.random() * 2) + 1;
 
     for (let i = 0; i < starCount; i++) {
       stars.push(new Star());
