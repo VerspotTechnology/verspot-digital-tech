@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
@@ -8,6 +7,7 @@ import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import LanguageSelector from './components/LanguageSelector';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 const ScrollToTop = () => {
@@ -23,6 +23,7 @@ const App: React.FC = () => {
     <LanguageProvider>
       <Router>
         <ScrollToTop />
+        <LanguageSelector />
         <div className="min-h-screen flex flex-col selection:bg-blue-500/30">
           <Navbar />
           <main className="flex-grow">
