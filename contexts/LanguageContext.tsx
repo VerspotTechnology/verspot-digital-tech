@@ -9,8 +9,9 @@ import { ptPT } from '../locales/pt-PT';
 import { arSA } from '../locales/ar-SA';
 import { koKR } from '../locales/ko-KR';
 import { jaJP } from '../locales/ja-JP';
+import { urPK } from '../locales/ur-PK';
 
-type Language = 'en-US' | 'zh-CN' | 'zh-TW' | 'ru-RU' | 'fr-FR' | 'es-ES' | 'pt-PT' | 'ar-SA' | 'ko-KR' | 'ja-JP';
+type Language = 'en-US' | 'zh-CN' | 'zh-TW' | 'ru-RU' | 'fr-FR' | 'es-ES' | 'pt-PT' | 'ar-SA' | 'ko-KR' | 'ja-JP' | 'ur-PK';
 
 interface LanguageContextType {
   language: Language;
@@ -28,7 +29,8 @@ const translations: Record<Language, typeof enUS> = {
   'pt-PT': ptPT,
   'ar-SA': arSA,
   'ko-KR': koKR,
-  'ja-JP': jaJP
+  'ja-JP': jaJP,
+  'ur-PK': urPK
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -53,6 +55,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
     if (browserLang.startsWith('ar')) return 'ar-SA';
     if (browserLang.startsWith('ko')) return 'ko-KR';
     if (browserLang.startsWith('ja')) return 'ja-JP';
+    if (browserLang.startsWith('ur')) return 'ur-PK';
     return 'en-US';
   });
 

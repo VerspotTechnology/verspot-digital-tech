@@ -10,6 +10,7 @@ const languages = [
   { code: 'es-ES', name: 'Español', flag: '🇪🇸' },
   { code: 'pt-PT', name: 'Português', flag: '🇵🇹' },
   { code: 'ar-SA', name: 'العربية', flag: '🇸🇦' },
+  { code: 'ur-PK', name: 'اردو', flag: '🇵🇰' },
   { code: 'ko-KR', name: '한국어', flag: '🇰🇷' },
   { code: 'ja-JP', name: '日本語', flag: '🇯🇵' }
 ] as const;
