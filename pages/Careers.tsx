@@ -1,39 +1,34 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Starfield from '../components/Starfield';
 
 const Careers: React.FC = () => {
   const { t, language } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<string>('全部');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
   
-  // Update selected category when language changes
+  const categories = t.careers.categories || ['All', 'Technical', 'Content & Design', 'Operations & Product', 'Talent'];
+
   useEffect(() => {
-    setSelectedCategory(language === 'en-US' ? 'All' : '全部');
+    if (categories.length > 0) {
+      setSelectedCategory(categories[0]);
+    }
   }, [language]);
   
-  // Use English categories when in English mode
-  const categories = language === 'en-US' 
-    ? ['All', 'Technical', 'Content & Design', 'Operations & Product', 'Talent']
-    : ['全部', '技术', '内容与设计', '运营与产品', '演艺模特'];
-
-  // Use jobs from translation files based on language
   const jobs = t.careers.jobs || [];
 
-  const filteredJobs = selectedCategory === (language === 'en-US' ? 'All' : '全部') 
+  const filteredJobs = selectedCategory === categories[0] 
     ? jobs 
     : jobs.filter(job => job.category === selectedCategory);
 
   return (
     <div className="relative pt-40 pb-32 min-h-screen bg-black">
-      {/* Starfield Background */}
       <Starfield />
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">{t.nav.careers}</h1>
             <p className="text-xl text-gray-500 font-light">
-              {t.careers.quote || "我们相信，对战不是敌对，而是玩家之间最真实的交流方式。"}
+              {t.careers.quote}
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
@@ -68,11 +63,11 @@ const Careers: React.FC = () => {
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div>
-                    <h4 className="text-white font-semibold mb-4 text-sm">{language === 'en-US' ? 'Job Responsibilities' : '岗位职责'}</h4>
+                    <h4 className="text-white font-semibold mb-4 text-sm">{t.careers.jobDetails.description}</h4>
                     <p className="text-gray-400 text-sm leading-relaxed mb-6">{job.description}</p>
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold mb-4 text-sm">{language === 'en-US' ? 'Requirements' : '任职要求'}</h4>
+                    <h4 className="text-white font-semibold mb-4 text-sm">{t.careers.jobDetails.requirements}</h4>
                     <ul className="space-y-2 text-sm text-gray-400">
                       {job.requirements.map((req, i) => (
                         <li key={i} className="flex items-start gap-2">
@@ -85,27 +80,27 @@ const Careers: React.FC = () => {
                 </div>
 
                 <div className="mt-12 flex justify-between items-center border-t border-white/5 pt-8">
-                  <p className="text-xs text-gray-500">{language === 'en-US' ? 'Please send your resume to:' : '简历请发送至:'} <span className="text-white">official@verspot.cn</span></p>
+                  <p className="text-xs text-gray-500">{t.careers.jobDetails.emailLabel} <span className="text-white">official@verspot.cn</span></p>
                   <a href="mailto:official@verspot.cn" className="px-8 py-3 bg-white text-black text-xs font-bold rounded-full group-hover:scale-105 transition-transform">
-                    {language === 'en-US' ? 'Apply Now' : '申请岗位'}
+                    {t.careers.jobDetails.apply}
                   </a>
                 </div>
               </div>
             ))
           ) : (
             <div className="text-center py-20 bg-white/5 rounded-3xl border border-dashed border-white/10 text-gray-500">
-              {language === 'en-US' ? 'No open positions in this category yet. Stay tuned.' : '该类别暂无开放岗位，敬请期待。'}
+              {t.careers.jobDetails.noPositions}
             </div>
           )}
         </div>
 
         <div className="mt-32 text-center p-12 bg-gradient-to-br from-blue-900/20 to-black rounded-3xl border border-white/10">
-          <h2 className="text-2xl font-bold mb-6">{language === 'en-US' ? 'Not Finding the Right Fit?' : '没找到合适的？'}</h2>
+          <h2 className="text-2xl font-bold mb-6">{t.careers.noMatch.title}</h2>
           <p className="text-gray-400 mb-8 max-w-lg mx-auto text-sm leading-relaxed">
-            {t.careers.noMatch.description || "如果你觉得自己与 Verspot 的基因完美契合，请将你的简历和自荐信发送至邮箱，我们期待与任何天才相遇。"}
+            {t.careers.noMatch.description}
           </p>
           <a href="mailto:official@verspot.cn" className="text-white font-bold border-b border-white hover:text-blue-400 transition-colors">
-            {t.careers.noMatch.apply || "投递自由岗位 →"}
+            {t.careers.noMatch.apply}
           </a>
         </div>
       </div>
