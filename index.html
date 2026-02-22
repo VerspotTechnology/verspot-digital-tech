@@ -80,6 +80,61 @@
                 opacity: 1;
             }
         }
+        
+        /* Glow Effect Styles */
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+        }
+        
+        @keyframes glow-float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(10%, -10%) scale(1.1); }
+            66% { transform: translate(-5%, 5%) scale(0.95); }
+        }
+        
+        .rounded-inherit {
+            border-radius: inherit;
+        }
+        
+        .card-with-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-with-glow::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: conic-gradient(
+                from var(--glow-angle, 0deg),
+                transparent 0%,
+                var(--glow-color-1, rgba(59, 130, 246, 0.3)) 10%,
+                transparent 20%,
+                var(--glow-color-2, rgba(139, 92, 246, 0.2)) 30%,
+                transparent 40%
+            );
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            animation: rotate-glow 8s linear infinite;
+        }
+        
+        .card-with-glow:hover::before {
+            opacity: 1;
+        }
+        
+        @keyframes rotate-glow {
+            from { --glow-angle: 0deg; }
+            to { --glow-angle: 360deg; }
+        }
+        
+        @property --glow-angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
     </style>
 <script type="importmap">
 {
