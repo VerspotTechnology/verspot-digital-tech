@@ -13,6 +13,16 @@ import LanguageTransition from './components/LanguageTransition';
 import LoadingBar from './components/LoadingBar';
 import ScrollToTopButton from './components/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
+import CookieConsent from './components/CookieConsent';
+import OfflineIndicator from './components/OfflineIndicator';
+import Breadcrumb from './components/Breadcrumb';
+import MouseGlow from './components/MouseGlow';
+import ReadingProgress from './components/ReadingProgress';
+import SocialShare from './components/SocialShare';
+import KeyboardShortcuts from './components/KeyboardShortcuts';
+import { CopyToast } from './components/CopyToClipboard';
+import BackButton from './components/BackButton';
+import VisitorCounter from './components/VisitorCounter';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 const ScrollToTop = () => {
@@ -27,11 +37,14 @@ const ScrollToTop = () => {
 
 const AppContent: React.FC = () => {
   const location = useLocation();
+  const showBreadcrumb = location.pathname !== '/';
   
   return (
     <LanguageTransition>
       <div className="min-h-screen flex flex-col selection:bg-blue-500/30">
         <Navbar />
+        {showBreadcrumb && <Breadcrumb />}
+        {showBreadcrumb && <BackButton />}
         <main id="main-content" className="flex-grow" role="main">
           <PageTransition key={location.pathname}>
             <Routes location={location}>
@@ -45,6 +58,8 @@ const AppContent: React.FC = () => {
         </main>
         <Footer />
         <ScrollToTopButton />
+        <SocialShare />
+        <VisitorCounter />
       </div>
     </LanguageTransition>
   );
@@ -55,10 +70,16 @@ const App: React.FC = () => {
     <ErrorBoundary>
       <LanguageProvider>
         <Router>
+          <ReadingProgress />
           <LoadingBar />
           <ScrollToTop />
           <LanguageSelector />
+          <OfflineIndicator />
+          <MouseGlow />
+          <KeyboardShortcuts />
+          <CopyToast />
           <AppContent />
+          <CookieConsent />
         </Router>
       </LanguageProvider>
     </ErrorBoundary>
