@@ -82,19 +82,22 @@ const Culture: React.FC = () => {
         </div>
 
         {/* Atmosphere */}
-        <div className="bg-white text-black p-12 md:p-24 rounded-3xl">
+        <div className="bg-gradient-to-br from-gray-900/80 to-blue-900/30 p-12 md:p-24 rounded-3xl backdrop-blur-sm border border-white/10">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-5xl font-bold mb-12">{t.culture.atmosphere.title}</h2>
-            <div className="space-y-8 text-lg text-gray-700 leading-relaxed italic">
+            <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">{t.culture.atmosphere.title}</h2>
+            <div className="space-y-8 text-lg text-gray-400 leading-relaxed italic">
               {t.culture.atmosphere.quotes?.map((quote, i) => (
-                <p key={i}>{quote}</p>
+                <p key={i} className="border-l-2 border-blue-500/50 pl-6">{quote}</p>
               ))}
             </div>
-            <div className="mt-16 border-l-4 border-black pl-8 py-2">
-              <h4 className="text-sm uppercase tracking-[0.3em] font-black mb-2">{t.culture.atmosphere.weHopeYouAre.title}</h4>
-              <ul className="space-y-2 text-gray-600">
+            <div className="mt-16 bg-white/5 rounded-2xl p-8 border border-white/10">
+              <h4 className="text-sm uppercase tracking-[0.3em] font-black mb-4 text-blue-400">{t.culture.atmosphere.weHopeYouAre.title}</h4>
+              <ul className="space-y-3 text-gray-400">
                 {t.culture.atmosphere.weHopeYouAre.items?.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-blue-500 mt-1">▹</span>
+                    <span>{item}</span>
+                  </li>
                 ))}
               </ul>
             </div>
