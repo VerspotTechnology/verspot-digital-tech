@@ -47,6 +47,21 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="relative bg-black rounded-3xl border border-white/10 p-12 overflow-hidden">
                 <GlowEffect color="mixed" intensity="medium" />
+                
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                  <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+                  <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+                </div>
+                
+                <div className="absolute top-6 right-6 flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                  </span>
+                  <span className="text-xs text-cyan-400 font-medium">视频开发中</span>
+                </div>
+                
                 <div className="relative z-10">
                   <h3 className="text-2xl font-bold mb-8 text-white uppercase tracking-tighter">{t.about.philosophy}</h3>
                   <ul className="space-y-6">
