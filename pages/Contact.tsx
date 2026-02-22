@@ -46,7 +46,6 @@ const Contact: React.FC = () => {
                       className="w-48 h-auto rounded-lg hover:scale-105 transition-transform cursor-pointer"
                       onClick={() => setShowWechatModal(true)}
                     />
-                    <p className="text-xs text-gray-500 mt-4 text-center">{t.contact.labels.wechatDesc}</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +108,6 @@ const Contact: React.FC = () => {
             >
               ×
             </button>
-            <p className="text-white text-center mt-6 text-sm">{t.contact.labels.wechatDesc}</p>
           </div>
         </div>
       )}

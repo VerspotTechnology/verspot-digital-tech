@@ -47,14 +47,6 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="relative bg-black rounded-3xl border border-white/10 p-12 overflow-hidden">
                 <GlowEffect color="mixed" intensity="medium" />
-                <div className="absolute inset-0 z-0 opacity-10 group-hover:opacity-15 transition-opacity">
-                  <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: "url('https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=company%20philosophy%20innovation%20futuristic%20digital%20background&image_size=landscape_4_3')"}}></div>
-                </div>
-                <div className="absolute top-0 right-0 p-8 opacity-10 z-10">
-                  <svg className="w-32 h-32" viewBox="0 0 24 24" fill="white">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"></path>
-                  </svg>
-                </div>
                 <div className="relative z-10">
                   <h3 className="text-2xl font-bold mb-8 text-white uppercase tracking-tighter">{t.about.philosophy}</h3>
                   <ul className="space-y-6">
@@ -78,11 +70,23 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-40 border-t border-white/5 pt-32">
-          <div className="flex flex-wrap justify-between gap-12 opacity-30 select-none grayscale hover:grayscale-0 transition-all">
-            <span className="text-4xl md:text-7xl font-black tracking-tighter hover:text-white transition-colors cursor-default">TECHNOLOGY</span>
-            <span className="text-4xl md:text-7xl font-black tracking-tighter hover:text-white transition-colors cursor-default">ENTERTAINMENT</span>
-            <span className="text-4xl md:text-7xl font-black tracking-tighter hover:text-white transition-colors cursor-default">COMMUNITY</span>
-            <span className="text-4xl md:text-7xl font-black tracking-tighter hover:text-white transition-colors cursor-default">FUTURE</span>
+          <div className="flex flex-wrap justify-between gap-12 select-none">
+            <span className="relative text-4xl md:text-7xl font-black tracking-tighter cursor-default group">
+              <span className="absolute inset-0 blur-xl bg-blue-500/30 group-hover:bg-blue-500/50 transition-colors"></span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 group-hover:from-blue-300 group-hover:to-blue-500 transition-all">TECHNOLOGY</span>
+            </span>
+            <span className="relative text-4xl md:text-7xl font-black tracking-tighter cursor-default group">
+              <span className="absolute inset-0 blur-xl bg-purple-500/30 group-hover:bg-purple-500/50 transition-colors"></span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600 group-hover:from-purple-300 group-hover:to-purple-500 transition-all">ENTERTAINMENT</span>
+            </span>
+            <span className="relative text-4xl md:text-7xl font-black tracking-tighter cursor-default group">
+              <span className="absolute inset-0 blur-xl bg-pink-500/30 group-hover:bg-pink-500/50 transition-colors"></span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600 group-hover:from-pink-300 group-hover:to-pink-500 transition-all">COMMUNITY</span>
+            </span>
+            <span className="relative text-4xl md:text-7xl font-black tracking-tighter cursor-default group">
+              <span className="absolute inset-0 blur-xl bg-cyan-500/30 group-hover:bg-cyan-500/50 transition-colors"></span>
+              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600 group-hover:from-cyan-300 group-hover:to-cyan-500 transition-all">FUTURE</span>
+            </span>
           </div>
         </div>
       </div>
