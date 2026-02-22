@@ -3,7 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>河北省点域数字科技责任有限公司 | Verspot</title>
+    <title>河北省点域数字科技有限责任公司 | Verspot - 数字娱乐创新者</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Verspot Technology (China) Co., Ltd. - 河北省点域数字科技有限责任公司，专注于数字娱乐内容研发、游戏与互动体验开发，构建多元数字娱乐空间。">
+    <meta name="keywords" content="Verspot, 点域数字科技, 数字娱乐, 游戏开发, 互动体验, 河北邯郸, 技术创新, 数字内容">
+    <meta name="author" content="Verspot Technology (China) Co., Ltd.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://verspot.cn/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://verspot.cn/">
+    <meta property="og:title" content="Verspot - 河北省点域数字科技有限责任公司">
+    <meta property="og:description" content="专注于数字娱乐内容研发、游戏与互动体验开发，构建多元数字娱乐空间。">
+    <meta property="og:image" content="https://verspot.cn/assets/og-image.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="zh_TW">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://verspot.cn/">
+    <meta name="twitter:title" content="Verspot - 河北省点域数字科技有限责任公司">
+    <meta name="twitter:description" content="专注于数字娱乐内容研发、游戏与互动体验开发，构建多元数字娱乐空间。">
+    <meta name="twitter:image" content="https://verspot.cn/assets/og-image.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -135,6 +172,27 @@
             initial-value: 0deg;
             inherits: false;
         }
+        
+        /* Skip Link for Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #0066cc;
+            color: white;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Focus Visible Styles */
+        :focus-visible {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
     </style>
 <script type="importmap">
 {
@@ -149,6 +207,7 @@
 <link rel="stylesheet" href="/index.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>

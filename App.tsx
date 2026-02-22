@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,13 +10,18 @@ import Footer from './components/Footer';
 import LanguageSelector from './components/LanguageSelector';
 import PageTransition from './components/PageTransition';
 import LanguageTransition from './components/LanguageTransition';
+import LoadingBar from './components/LoadingBar';
+import ScrollToTopButton from './components/ScrollToTop';
+import ErrorBoundary from './components/ErrorBoundary';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
-  useEffect(() => {
+  
+  React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+  
   return null;
 };
 
@@ -27,7 +32,7 @@ const AppContent: React.FC = () => {
     <LanguageTransition>
       <div className="min-h-screen flex flex-col selection:bg-blue-500/30">
         <Navbar />
-        <main className="flex-grow">
+        <main id="main-content" className="flex-grow" role="main">
           <PageTransition key={location.pathname}>
             <Routes location={location}>
               <Route path="/" element={<Home />} />
@@ -39,6 +44,7 @@ const AppContent: React.FC = () => {
           </PageTransition>
         </main>
         <Footer />
+        <ScrollToTopButton />
       </div>
     </LanguageTransition>
   );
@@ -46,13 +52,16 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <LanguageProvider>
-      <Router>
-        <ScrollToTop />
-        <LanguageSelector />
-        <AppContent />
-      </Router>
-    </LanguageProvider>
+    <ErrorBoundary>
+      <LanguageProvider>
+        <Router>
+          <LoadingBar />
+          <ScrollToTop />
+          <LanguageSelector />
+          <AppContent />
+        </Router>
+      </LanguageProvider>
+    </ErrorBoundary>
   );
 };
 

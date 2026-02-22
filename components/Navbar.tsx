@@ -34,27 +34,46 @@ const Navbar: React.FC = () => {
     setIsMobileMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleEscape);
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [isMobileMenuOpen]);
+
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-2xl' : 'bg-transparent py-6'}`}>
+    <nav 
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-2xl' : 'bg-transparent py-6'}`}
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="flex items-center group transition-transform hover:scale-105 active:scale-95" onClick={closeMobileMenu}>
-          {/* Logo Image */}
+        <Link 
+          to="/" 
+          className="flex items-center group transition-transform hover:scale-105 active:scale-95" 
+          onClick={closeMobileMenu}
+          aria-label="Go to homepage"
+        >
           <img 
             src={logo} 
             alt="Verspot Logo" 
             className="h-10 w-auto object-contain"
             onError={(e) => {
-              // Fallback if image isn't found yet
               (e.target as HTMLImageElement).style.display = 'none';
             }}
           />
         </Link>
         
-        <div className="hidden md:flex space-x-10 items-center">
+        <div className="hidden md:flex space-x-10 items-center" role="menubar">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
+              role="menuitem"
+              aria-current={location.pathname === link.path ? 'page' : undefined}
               className={`text-sm font-medium tracking-wide transition-all duration-300 hover:text-white ${
                 location.pathname === link.path ? 'text-white' : 'text-gray-400'
               }`}
@@ -64,6 +83,7 @@ const Navbar: React.FC = () => {
           ))}
           <Link
             to="/careers"
+            role="menuitem"
             className="px-6 py-2 bg-white text-black text-xs font-bold rounded-full hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg"
           >
             {t.nav.hiring}
@@ -71,34 +91,41 @@ const Navbar: React.FC = () => {
           <LanguageSwitcher />
         </div>
 
-        {/* Mobile Menu Button and Language Switcher */}
         <div className="md:hidden flex items-center space-x-4">
           <LanguageSwitcher />
           <button 
             onClick={toggleMobileMenu}
-            className="text-white p-2 focus:outline-none"
-            aria-label="Toggle menu"
+            className="text-white p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             )}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 py-6 px-6 shadow-2xl animate-fade-in">
+          <div 
+            id="mobile-menu"
+            className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10 py-6 px-6 shadow-2xl animate-fade-in"
+            role="menu"
+            aria-label="Mobile navigation"
+          >
             <div className="flex flex-col space-y-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
+                  role="menuitem"
+                  aria-current={location.pathname === link.path ? 'page' : undefined}
                   className={`text-sm font-medium tracking-wide transition-all duration-300 hover:text-white ${
                     location.pathname === link.path ? 'text-white' : 'text-gray-400'
                   }`}
@@ -109,6 +136,7 @@ const Navbar: React.FC = () => {
               ))}
               <Link
                 to="/careers"
+                role="menuitem"
                 className="px-6 py-3 bg-white text-black text-xs font-bold rounded-full hover:bg-gray-200 transition-all text-center"
                 onClick={closeMobileMenu}
               >

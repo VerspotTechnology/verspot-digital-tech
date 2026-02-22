@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://verspot.cn/sitemap.xml
+
+Disallow: /api/
+Disallow: /admin/
