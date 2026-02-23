@@ -11,14 +11,14 @@ import LanguageSelector from './components/LanguageSelector';
 import PageTransition from './components/PageTransition';
 import LanguageTransition from './components/LanguageTransition';
 import LoadingBar from './components/LoadingBar';
-import ScrollToTopButton from './components/ScrollToTop';
+
 import ErrorBoundary from './components/ErrorBoundary';
 import CookieConsent from './components/CookieConsent';
 import OfflineIndicator from './components/OfflineIndicator';
 import Breadcrumb from './components/Breadcrumb';
 import MouseGlow from './components/MouseGlow';
 import ReadingProgress from './components/ReadingProgress';
-import SocialShare from './components/SocialShare';
+
 import KeyboardShortcuts from './components/KeyboardShortcuts';
 import { CopyToast } from './components/CopyToClipboard';
 import BackButton from './components/BackButton';
@@ -57,8 +57,7 @@ const AppContent: React.FC = () => {
           </PageTransition>
         </main>
         <Footer />
-        <ScrollToTopButton />
-        <SocialShare />
+
         <VisitorCounter />
       </div>
     </LanguageTransition>

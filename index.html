@@ -49,6 +49,18 @@
             background-color: #000000;
             color: #ffffff;
             overflow-x: hidden;
+            touch-action: none;
+            overscroll-behavior-x: none;
+        }
+        html, body {
+            overflow-x: hidden;
+            position: relative;
+            width: 100%;
+            max-width: 100vw;
+        }
+        * {
+            max-width: 100vw;
+            box-sizing: border-box;
         }
         .metallic-text {
             background: linear-gradient(
