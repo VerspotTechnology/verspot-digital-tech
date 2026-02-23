@@ -25,12 +25,13 @@ const LanguageSwitcher: React.FC = () => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+        className="flex items-center space-x-2 px-4 py-3 md:px-3 md:py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-all duration-300 border border-white/10"
+        aria-label="切换语言"
       >
-        <span className="text-lg">{currentLanguage.flag}</span>
+        <span className="text-xl md:text-lg">{currentLanguage.flag}</span>
         <span className="text-sm text-white hidden sm:inline">{currentLanguage.name}</span>
         <svg
-          className={`w-4 h-4 text-white transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 md:w-4 md:h-4 text-white transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -45,7 +46,7 @@ const LanguageSwitcher: React.FC = () => {
             className="fixed inset-0 z-40"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 mt-2 w-full max-w-xs sm:w-48 rounded-lg bg-gray-900 border border-white/10 shadow-xl z-50 max-h-80 overflow-y-auto">
+          <div className="absolute right-0 mt-2 w-full max-w-xs sm:w-48 rounded-lg bg-black/95 backdrop-blur-md border border-white/10 shadow-2xl z-50 max-h-96 overflow-y-auto transform transition-all duration-300 ease-in-out">
             {languages.map((lang) => (
               <button
                 key={lang.code}
@@ -53,14 +54,15 @@ const LanguageSwitcher: React.FC = () => {
                   setLanguage(lang.code as any);
                   setIsOpen(false);
                 }}
-                className={`w-full flex items-center space-x-3 px-4 py-2.5 text-left hover:bg-white/5 transition-colors ${
+                className={`w-full flex items-center space-x-3 px-5 py-3 md:px-4 md:py-2.5 text-left hover:bg-white/5 transition-all duration-200 ${
                   language === lang.code ? 'bg-white/10 text-white' : 'text-gray-300'
                 }`}
+                aria-label={`切换到${lang.name}`}
               >
-                <span className="text-lg">{lang.flag}</span>
+                <span className="text-xl md:text-lg">{lang.flag}</span>
                 <span className="text-sm">{lang.name}</span>
                 {language === lang.code && (
-                  <svg className="w-4 h-4 ml-auto text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 md:w-4 md:h-4 ml-auto text-green-400" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 )}

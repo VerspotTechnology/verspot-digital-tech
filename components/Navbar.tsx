@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav 
-      className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/90 backdrop-blur-md py-4 shadow-2xl"
+      className="fixed top-0 left-0 w-full z-[999] transition-all duration-300 bg-black/90 backdrop-blur-md py-4 shadow-2xl"
       role="navigation"
       aria-label="Main navigation"
     >
