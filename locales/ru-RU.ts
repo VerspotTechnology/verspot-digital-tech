@@ -349,5 +349,29 @@ export const ruRU = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. Все права защищены.',
     legal: 'Правовая информация',
     privacy: 'Политика конфиденциальности'
+  },
+  common: {
+    cookie: {
+      title: 'Настройки Cookie',
+      description: 'Мы используем файлы cookie для улучшения вашего опыта просмотра. Продолжая использовать этот сайт, вы соглашаетесь с нашей политикой cookie.',
+      accept: 'Принять',
+      decline: 'Отклонить'
+    },
+    back: 'Назад',
+    visitors: 'Посетители',
+    videoDeveloping: 'Видео в разработке',
+    offline: 'Сетевое соединение потеряно',
+    copied: 'Скопировано',
+    copiedToClipboard: 'Скопировано в буфер обмена',
+    share: 'Поделиться',
+    shareToWechat: 'Поделиться в WeChat',
+    shareToWeibo: 'Поделиться в Weibo',
+    copyLink: 'Копировать ссылку',
+    screenshotToShare: 'Сделайте скриншот для публикации в WeChat'
+  },
+  languageSelector: {
+    title: 'Выберите язык',
+    subtitle: '选择您的语言',
+    confirm: 'Подтвердить'
   }
 };

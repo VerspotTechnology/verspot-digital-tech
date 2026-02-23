@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const OfflineIndicator: React.FC = () => {
   const [isOffline, setIsOffline] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleOnline = () => setIsOffline(false);
@@ -27,7 +29,7 @@ const OfflineIndicator: React.FC = () => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
         </span>
-        <span className="text-white text-sm font-medium">网络连接已断开</span>
+        <span className="text-white text-sm font-medium">{t.common.offline}</span>
       </div>
     </div>
   );

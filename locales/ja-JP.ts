@@ -349,5 +349,29 @@ export const jaJP = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: '法的通知',
     privacy: 'プライバシーポリシー'
+  },
+  common: {
+    cookie: {
+      title: 'Cookie設定',
+      description: '当社はCookieを使用してブラウジング体験を向上させています。このウェブサイトを継続して使用することにより、Cookieポリシーに同意したものとみなされます。',
+      accept: '同意する',
+      decline: '拒否する'
+    },
+    back: '戻る',
+    visitors: '訪問者',
+    videoDeveloping: 'ビデオ開発中',
+    offline: 'ネットワーク接続が切断されました',
+    copied: 'コピーしました',
+    copiedToClipboard: 'クリップボードにコピーしました',
+    share: '共有',
+    shareToWechat: 'WeChatで共有',
+    shareToWeibo: 'Weiboで共有',
+    copyLink: 'リンクをコピー',
+    screenshotToShare: 'WeChatで共有するにはスクリーンショットしてください'
+  },
+  languageSelector: {
+    title: '言語を選択',
+    subtitle: '选择您的语言',
+    confirm: '確認'
   }
 };

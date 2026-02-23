@@ -349,5 +349,29 @@ export const koKR = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. 모든 권리 보유.',
     legal: '법적 고지',
     privacy: '개인정보 보호정책'
+  },
+  common: {
+    cookie: {
+      title: '쿠키 설정',
+      description: '당사는 쿠키를 사용하여 브라우징 경험을 개선합니다. 이 웹사이트를 계속 사용하면 쿠키 정책에 동의하는 것으로 간주됩니다.',
+      accept: '수락',
+      decline: '거부'
+    },
+    back: '뒤로',
+    visitors: '방문자',
+    videoDeveloping: '비디오 개발 중',
+    offline: '네트워크 연결 끊김',
+    copied: '복사됨',
+    copiedToClipboard: '클립보드에 복사됨',
+    share: '공유',
+    shareToWechat: 'WeChat에 공유',
+    shareToWeibo: 'Weibo에 공유',
+    copyLink: '링크 복사',
+    screenshotToShare: 'WeChat에 공유하려면 스크린샷하세요'
+  },
+  languageSelector: {
+    title: '언어 선택',
+    subtitle: '选择您的语言',
+    confirm: '확인'
   }
 };

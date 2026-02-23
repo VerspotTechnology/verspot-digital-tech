@@ -349,5 +349,29 @@ export const arSA = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. جميع الحقوق محفوظة.',
     legal: 'إشعار قانوني',
     privacy: 'سياسة الخصوصية'
+  },
+  common: {
+    cookie: {
+      title: 'إعدادات ملفات تعريف الارتباط',
+      description: 'نستخدم ملفات تعريف الارتباط لتحسين تجربة التصفح لديك. بمواصلة استخدام هذا الموقع، فإنك توافق على سياسة ملفات تعريف الارتباط الخاصة بنا.',
+      accept: 'قبول',
+      decline: 'رفض'
+    },
+    back: 'رجوع',
+    visitors: 'الزوار',
+    videoDeveloping: 'الفيديو قيد التطوير',
+    offline: 'تم فقدان اتصال الشبكة',
+    copied: 'تم النسخ',
+    copiedToClipboard: 'تم النسخ إلى الحافظة',
+    share: 'مشاركة',
+    shareToWechat: 'مشاركة على WeChat',
+    shareToWeibo: 'مشاركة على Weibo',
+    copyLink: 'نسخ الرابط',
+    screenshotToShare: 'التقط لقطة شاشة للمشاركة على WeChat'
+  },
+  languageSelector: {
+    title: 'اختر لغتك',
+    subtitle: '选择您的语言',
+    confirm: 'تأكيد'
   }
 };

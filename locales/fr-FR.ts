@@ -349,5 +349,29 @@ export const frFR = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. Tous droits réservés.',
     legal: 'Mentions légales',
     privacy: 'Politique de confidentialité'
+  },
+  common: {
+    cookie: {
+      title: 'Paramètres des cookies',
+      description: 'Nous utilisons des cookies pour améliorer votre expérience de navigation. En continuant à utiliser ce site, vous acceptez notre politique de cookies.',
+      accept: 'Accepter',
+      decline: 'Refuser'
+    },
+    back: 'Retour',
+    visitors: 'Visiteurs',
+    videoDeveloping: 'Vidéo en développement',
+    offline: 'Connexion réseau perdue',
+    copied: 'Copié',
+    copiedToClipboard: 'Copié dans le presse-papiers',
+    share: 'Partager',
+    shareToWechat: 'Partager sur WeChat',
+    shareToWeibo: 'Partager sur Weibo',
+    copyLink: 'Copier le lien',
+    screenshotToShare: 'Capturez pour partager sur WeChat'
+  },
+  languageSelector: {
+    title: 'Choisissez votre langue',
+    subtitle: '选择您的语言',
+    confirm: 'Confirmer'
   }
 };

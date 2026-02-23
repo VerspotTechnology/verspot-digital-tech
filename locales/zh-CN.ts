@@ -349,5 +349,29 @@ export const zhCN = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: '法律声明',
     privacy: '隐私政策'
+  },
+  common: {
+    cookie: {
+      title: 'Cookie 设置',
+      description: '我们使用 Cookie 来改善您的浏览体验。继续使用本网站即表示您同意我们的 Cookie 政策。',
+      accept: '接受',
+      decline: '拒绝'
+    },
+    back: '返回',
+    visitors: '访问量',
+    videoDeveloping: '视频开发中',
+    offline: '网络连接已断开',
+    copied: '已复制',
+    copiedToClipboard: '已复制到剪贴板',
+    share: '分享',
+    shareToWechat: '分享到微信',
+    shareToWeibo: '分享到微博',
+    copyLink: '复制链接',
+    screenshotToShare: '请截图分享到微信'
+  },
+  languageSelector: {
+    title: '选择您的语言',
+    subtitle: 'Select your language',
+    confirm: '确认'
   }
 };

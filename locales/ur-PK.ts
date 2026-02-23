@@ -349,5 +349,29 @@ export const urPK = {
     copyright: '© 2025 Verspot Technology (China) Co., Ltd. All rights reserved.',
     legal: 'Legal Notice',
     privacy: 'Privacy Policy'
+  },
+  common: {
+    cookie: {
+      title: 'کوکی کی ترتیبات',
+      description: 'ہم آپ کے براؤزنگ تجربے کو بہتر بنانے کے لیے کوکیز استعمال کرتے ہیں۔ اس ویب سائٹ کو استعمال جاری رکھ کر، آپ ہماری کوکی پالیسی سے متفق ہیں۔',
+      accept: 'قبول کریں',
+      decline: 'مسترد کریں'
+    },
+    back: 'واپس',
+    visitors: 'زائرین',
+    videoDeveloping: 'ویڈیو تیاری میں ہے',
+    offline: 'نیٹ ورک کنکشن منقطع',
+    copied: 'کاپی ہو گیا',
+    copiedToClipboard: 'کلپ بورڈ میں کاپی ہو گیا',
+    share: 'شیئر کریں',
+    shareToWechat: 'WeChat پر شیئر کریں',
+    shareToWeibo: 'Weibo پر شیئر کریں',
+    copyLink: 'لنک کاپی کریں',
+    screenshotToShare: 'WeChat پر شیئر کرنے کے لیے اسکرین شاٹ لیں'
+  },
+  languageSelector: {
+    title: 'اپنی زبان منتخب کریں',
+    subtitle: '选择您的语言',
+    confirm: 'تصدیق کریں'
   }
 };

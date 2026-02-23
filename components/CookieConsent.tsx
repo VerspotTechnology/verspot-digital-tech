@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const CookieConsent: React.FC = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const consent = localStorage.getItem('cookie_consent');
@@ -29,9 +31,9 @@ const CookieConsent: React.FC = () => {
           <div className="flex items-center gap-4">
             <span className="text-3xl">🍪</span>
             <div>
-              <h3 className="text-white font-semibold mb-1">Cookie 设置</h3>
+              <h3 className="text-white font-semibold mb-1">{t.common.cookie.title}</h3>
               <p className="text-gray-400 text-sm">
-                我们使用 Cookie 来改善您的浏览体验。继续使用本网站即表示您同意我们的 Cookie 政策。
+                {t.common.cookie.description}
               </p>
             </div>
           </div>
@@ -40,13 +42,13 @@ const CookieConsent: React.FC = () => {
               onClick={declineCookies}
               className="px-6 py-2.5 text-sm text-gray-400 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
             >
-              拒绝
+              {t.common.cookie.decline}
             </button>
             <button
               onClick={acceptCookies}
               className="px-6 py-2.5 text-sm bg-white text-black font-medium rounded-full hover:bg-gray-200 transition-colors"
             >
-              接受
+              {t.common.cookie.accept}
             </button>
           </div>
         </div>
