@@ -60,7 +60,7 @@ const SocialShare: React.FC = () => {
   return (
     <div className="fixed bottom-24 right-8 z-50">
       {isOpen && (
-        <div className="absolute bottom-14 right-0 bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-2xl min-w-[160px] animate-fade-in">
+        <div className="absolute bottom-14 right-0 bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-4 shadow-2xl min-w-[160px] max-w-[80vw] animate-fade-in">
           <div className="space-y-2">
             {shareLinks.map((link, i) => (
               <button
