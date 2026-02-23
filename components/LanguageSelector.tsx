@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage, Language } from '../contexts/LanguageContext';
 
 const languages = [
-  { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
-  { code: 'zh-TW', name: '繁體中文', flag: '🇹🇼' },
-  { code: 'en-US', name: 'English', flag: '🇺🇸' },
-  { code: 'ru-RU', name: 'Русский', flag: '��' },
-  { code: 'fr-FR', name: 'Français', flag: '🇫🇷' },
-  { code: 'es-ES', name: 'Español', flag: '🇪🇸' },
-  { code: 'pt-PT', name: 'Português', flag: '🇵�' },
-  { code: 'ar-SA', name: 'العربية', flag: '��🇦' },
-  { code: 'ur-PK', name: 'اردو', flag: '🇵🇰' },
-  { code: 'ko-KR', name: '한국어', flag: '🇰🇷' },
-  { code: 'ja-JP', name: '日本語', flag: '🇯🇵' }
+  { code: 'zh-CN', name: '简体中文', flag: '\u{1F1E8}\u{1F1F3}' }, // 🇨🇳
+  { code: 'zh-TW', name: '繁體中文', flag: '\u{1F1F9}\u{1F1FC}' }, // 🇹🇼
+  { code: 'en-US', name: 'English', flag: '\u{1F1FA}\u{1F1F8}' }, // 🇺🇸
+  { code: 'ru-RU', name: 'Русский', flag: '\u{1F1F7}\u{1F1FA}' }, // 🇷🇺
+  { code: 'fr-FR', name: 'Français', flag: '\u{1F1EB}\u{1F1F7}' }, // 🇫🇷
+  { code: 'es-ES', name: 'Español', flag: '\u{1F1EA}\u{1F1F8}' }, // 🇪🇸
+  { code: 'pt-PT', name: 'Português', flag: '\u{1F1F5}\u{1F1F9}' }, // 🇵🇹
+  { code: 'ar-SA', name: 'العربية', flag: '\u{1F1F8}\u{1F1E6}' }, // 🇸🇦
+  { code: 'ur-PK', name: 'اردو', flag: '\u{1F1F5}\u{1F1F0}' }, // 🇵🇰
+  { code: 'ko-KR', name: '한국어', flag: '\u{1F1F0}\u{1F1F7}' }, // 🇰🇷
+  { code: 'ja-JP', name: '日本語', flag: '\u{1F1EF}\u{1F1F5}' } // 🇯🇵
 ] as const;
 
 const getLocalizedText = (lang: Language) => {
@@ -69,7 +69,7 @@ const LanguageSelector: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-3 sm:p-4 overflow-x-hidden w-full">
-      <div className="relative w-full sm:max-w-sm md:max-w-md bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden max-w-[95vw] sm:max-w-[80vw] md:max-w-[60vw] lg:max-w-[40vw]">
+      <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden max-w-[90vw] sm:max-w-[80vw] md:max-w-[60vw] lg:max-w-[40vw]">
         <div className={`p-6 sm:p-8 text-center border-b border-white/10 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
           <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌍</div>
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">{localizedText.title}</h2>
@@ -82,14 +82,14 @@ const LanguageSelector: React.FC = () => {
               <button
                 key={lang.code}
                 onClick={() => handleSelectLanguage(lang.code as Language)}
-                className={`flex items-center gap-3 px-4 sm:px-4 py-3 sm:py-3 rounded-xl transition-all ${
+                className={`flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2.5 sm:py-3 rounded-xl transition-all ${
                   language === lang.code
                     ? 'bg-blue-600/30 border border-blue-500/50 text-white'
                     : 'bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 hover:border-white/20'
                 }`}
               >
                 <span className="text-xl sm:text-2xl flex-shrink-0">{lang.flag}</span>
-                <span className="text-sm sm:text-sm font-medium flex-1 text-left truncate">{lang.name}</span>
+                <span className="text-xs sm:text-sm font-medium flex-1 text-left truncate">{lang.name}</span>
                 {language === lang.code && (
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0 text-blue-400 animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 01-1.414 0l-4.243a8 8 0 1111.314 0z" />

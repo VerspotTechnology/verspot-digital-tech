@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const languages = [
-  { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
-  { code: 'zh-TW', name: '繁體中文', flag: '🇹🇼' },
-  { code: 'en-US', name: 'English', flag: '🇺🇸' },
-  { code: 'ru-RU', name: 'Русский', flag: '🇷🇺' },
-  { code: 'fr-FR', name: 'Français', flag: '🇫🇷' },
-  { code: 'es-ES', name: 'Español', flag: '🇪🇸' },
-  { code: 'pt-PT', name: 'Português', flag: '🇵🇹' },
-  { code: 'ar-SA', name: 'العربية', flag: '🇸🇦' },
-  { code: 'ur-PK', name: 'اردو', flag: '🇵🇰' },
-  { code: 'ko-KR', name: '한국어', flag: '🇰🇷' },
-  { code: 'ja-JP', name: '日本語', flag: '🇯🇵' }
+  { code: 'zh-CN', name: '简体中文', flag: '\u{1F1E8}\u{1F1F3}' }, // 🇨🇳
+  { code: 'zh-TW', name: '繁體中文', flag: '\u{1F1F9}\u{1F1FC}' }, // 🇹🇼
+  { code: 'en-US', name: 'English', flag: '\u{1F1FA}\u{1F1F8}' }, // 🇺🇸
+  { code: 'ru-RU', name: 'Русский', flag: '\u{1F1F7}\u{1F1FA}' }, // 🇷🇺
+  { code: 'fr-FR', name: 'Français', flag: '\u{1F1EB}\u{1F1F7}' }, // 🇫🇷
+  { code: 'es-ES', name: 'Español', flag: '\u{1F1EA}\u{1F1F8}' }, // 🇪🇸
+  { code: 'pt-PT', name: 'Português', flag: '\u{1F1F5}\u{1F1F9}' }, // 🇵🇹
+  { code: 'ar-SA', name: 'العربية', flag: '\u{1F1F8}\u{1F1E6}' }, // 🇸🇦
+  { code: 'ur-PK', name: 'اردو', flag: '\u{1F1F5}\u{1F1F0}' }, // 🇵🇰
+  { code: 'ko-KR', name: '한국어', flag: '\u{1F1F0}\u{1F1F7}' }, // 🇰🇷
+  { code: 'ja-JP', name: '日本語', flag: '\u{1F1EF}\u{1F1F5}' } // 🇯🇵
 ] as const;
 
 const LanguageSwitcher: React.FC = () => {
