@@ -25,28 +25,28 @@ const CookieConsent: React.FC = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[90] p-4 animate-fade-in">
-      <div className="max-w-4xl mx-auto bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-2xl">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <span className="text-3xl">🍪</span>
-            <div>
-              <h3 className="text-white font-semibold mb-1">{t.common.cookie.title}</h3>
-              <p className="text-gray-400 text-sm">
+    <div className="fixed bottom-0 left-0 right-0 z-[90] p-3 sm:p-4 animate-fade-in">
+      <div className="max-w-4xl mx-auto bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 shadow-2xl">
+        <div className="flex flex-col gap-4 sm:gap-4">
+          <div className="flex items-start gap-3 sm:gap-4">
+            <span className="text-2xl sm:text-3xl flex-shrink-0">🍪</span>
+            <div className="flex-1 min-w-0">
+              <h3 className="text-white font-semibold mb-1 text-sm sm:text-base">{t.common.cookie.title}</h3>
+              <p className="text-gray-400 text-xs sm:text-sm leading-relaxed break-words">
                 {t.common.cookie.description}
               </p>
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full">
             <button
               onClick={declineCookies}
-              className="px-6 py-2.5 text-sm text-gray-400 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
+              className="flex-1 px-4 py-2 text-xs sm:text-sm text-gray-400 border border-white/10 rounded-full hover:bg-white/5 transition-colors whitespace-nowrap"
             >
               {t.common.cookie.decline}
             </button>
             <button
               onClick={acceptCookies}
-              className="px-6 py-2.5 text-sm bg-white text-black font-medium rounded-full hover:bg-gray-200 transition-colors"
+              className="flex-1 px-4 py-2 text-xs sm:text-sm bg-white text-black font-medium rounded-full hover:bg-gray-200 transition-colors whitespace-nowrap"
             >
               {t.common.cookie.accept}
             </button>
