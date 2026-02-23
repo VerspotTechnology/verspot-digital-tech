@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         <Link 
           to="/" 
           className="flex items-center group transition-transform hover:scale-105 active:scale-95" 

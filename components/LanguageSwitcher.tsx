@@ -45,7 +45,7 @@ const LanguageSwitcher: React.FC = () => {
             className="fixed inset-0 z-40"
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 mt-2 w-48 rounded-lg bg-gray-900 border border-white/10 shadow-xl z-50 max-h-80 overflow-y-auto">
+          <div className="absolute right-0 mt-2 w-full max-w-xs sm:w-48 rounded-lg bg-gray-900 border border-white/10 shadow-xl z-50 max-h-80 overflow-y-auto">
             {languages.map((lang) => (
               <button
                 key={lang.code}
