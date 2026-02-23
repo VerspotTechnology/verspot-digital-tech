@@ -68,8 +68,8 @@ const LanguageSelector: React.FC = () => {
   if (!showSelector) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-3 sm:p-4">
-      <div className="relative w-full max-w-sm sm:max-w-md bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-sm p-3 sm:p-4 overflow-x-hidden">
+      <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md bg-gray-900 rounded-2xl border border-white/10 shadow-2xl overflow-hidden">
         <div className={`p-6 sm:p-8 text-center border-b border-white/10 transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
           <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🌍</div>
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 sm:mb-2">{localizedText.title}</h2>

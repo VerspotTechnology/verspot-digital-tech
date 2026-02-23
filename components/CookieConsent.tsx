@@ -25,8 +25,8 @@ const CookieConsent: React.FC = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[90] p-3 sm:p-4 animate-fade-in">
-      <div className="max-w-4xl mx-auto bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 shadow-2xl">
+    <div className="fixed bottom-0 left-0 right-0 z-[90] p-3 sm:p-4 animate-fade-in overflow-x-hidden">
+      <div className="max-w-md sm:max-w-4xl mx-auto bg-gray-900/95 backdrop-blur-md border border-white/10 rounded-2xl p-4 sm:p-6 shadow-2xl">
         <div className="flex flex-col gap-4 sm:gap-4">
           <div className="flex items-start gap-3 sm:gap-4">
             <span className="text-2xl sm:text-3xl flex-shrink-0">🍪</span>
