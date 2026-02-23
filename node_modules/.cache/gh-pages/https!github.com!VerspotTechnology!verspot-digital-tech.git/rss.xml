@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verspot - 河北省点域数字科技有限责任公司</title>
+    <link>https://verspot.cn</link>
+    <description>专注于数字娱乐内容研发、游戏与互动体验开发，构建多元数字娱乐空间。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 01 Jan 2025 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://verspot.cn/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>关于我们</title>
+      <link>https://verspot.cn/#/about</link>
+      <description>Verspot Technology (China) Co., Ltd. - 河北省点域数字科技有限责任公司</description>
+      <pubDate>Sun, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>企业文化</title>
+      <link>https://verspot.cn/#/culture</link>
+      <description>探索我们的企业文化和核心价值观</description>
+      <pubDate>Sun, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>加入我们</title>
+      <link>https://verspot.cn/#/careers</link>
+      <description>查看我们的招聘职位</description>
+      <pubDate>Sun, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>联系我们</title>
+      <link>https://verspot.cn/#/contact</link>
+      <description>与我们取得联系</description>
+      <pubDate>Sun, 01 Jan 2025 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
