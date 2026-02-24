@@ -53,8 +53,8 @@ const About: React.FC = () => {
             <div className="relative group">
               <div className="relative rounded-3xl border border-white/10 p-12 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat overflow-hidden rounded-3xl" style={{backgroundImage: 'url(/assets/company-philosophy-bg.png)'}}></div>
-                <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
-                <GlowEffect color="mixed" intensity="medium" />
+                <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+                <GlowEffect color="white" intensity="strong" />
                 
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                   <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -86,8 +86,7 @@ const About: React.FC = () => {
                       <span className="text-gray-300">{t.about.philosophy3}</span>
                     </li>
                   </ul>
-                  <div className="mt-8 relative group">
-                    <GlowEffect color="white" intensity="medium" />
+                  <div className="mt-8">
                     <button
                       onClick={handlePlayButtonClick}
                       className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors flex items-center gap-2 relative z-10"
