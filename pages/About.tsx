@@ -87,7 +87,7 @@ const About: React.FC = () => {
                     </li>
                   </ul>
                   <div className="mt-8 relative group">
-                    <GlowEffect color="blue" intensity="subtle" />
+                    <GlowEffect color="white" intensity="medium" />
                     <button
                       onClick={handlePlayButtonClick}
                       className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors flex items-center gap-2 relative z-10"
