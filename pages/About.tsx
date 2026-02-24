@@ -51,16 +51,16 @@ const About: React.FC = () => {
 
           <div className="flex flex-col justify-center">
             <div className="relative group">
-              <div className="relative rounded-3xl border border-white/20 p-12 overflow-hidden shadow-[0_0_60px_rgba(255,255,255,0.15)]">
+              <div className="relative rounded-3xl border border-white/30 p-12 overflow-hidden shadow-[0_0_80px_rgba(255,255,255,0.25),0_0_120px_rgba(255,255,255,0.1)]">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat overflow-hidden rounded-3xl" style={{backgroundImage: 'url(/assets/company-philosophy-bg.png)'}}></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/60 to-black/80 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/50 to-black/70 z-0"></div>
                 <GlowEffect color="white" intensity="strong" />
-                <div className="absolute inset-0 bg-white/5 backdrop-blur-sm z-0"></div>
-                
+                <div className="absolute inset-0 bg-white/10 backdrop-blur-md z-0"></div>
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                  <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-                  <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
-                  <div className="absolute top-1/2 left-1/2 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+                  <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white/20 rounded-full blur-3xl animate-pulse"></div>
+                  <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-white/25 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white/5 via-transparent to-white/5 animate-pulse" style={{animationDuration: '3s'}}></div>
                 </div>
                 
                 <div className="absolute top-6 right-6 flex items-center gap-2 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full">
