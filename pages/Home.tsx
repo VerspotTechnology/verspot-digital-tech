@@ -5,7 +5,6 @@ import heroLogoEN from '../hero-logo-EN.png';
 import { useLanguage } from '../contexts/LanguageContext';
 import Starfield from '../components/Starfield';
 import GlowEffect from '../components/GlowEffect';
-import VideoPlayer from '../components/VideoPlayer';
 
 const Home: React.FC = () => {
   const { t, language } = useLanguage();
@@ -147,16 +146,6 @@ const Home: React.FC = () => {
               </svg>
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 sm:py-32 bg-[#000000]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Video Showcase</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Check out our latest video content and upcoming projects</p>
-          </div>
-          <VideoPlayer />
         </div>
       </section>
     </div>

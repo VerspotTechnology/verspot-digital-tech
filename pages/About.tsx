@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import Starfield from '../components/Starfield';
 import GlowEffect from '../components/GlowEffect';
 
 const About: React.FC = () => {
   const { t } = useLanguage();
+  const [showToast, setShowToast] = useState(false);
+
+  const handlePlayButtonClick = () => {
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
+  };
 
   return (
     <div className="relative min-h-screen bg-black">
@@ -80,7 +86,25 @@ const About: React.FC = () => {
                       <span className="text-gray-300">{t.about.philosophy3}</span>
                     </li>
                   </ul>
+                  <div className="mt-8">
+                    <button
+                      onClick={handlePlayButtonClick}
+                      className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors flex items-center gap-2"
+                      aria-label="Play video"
+                    >
+                      <span>▶</span>
+                      <span>待播放</span>
+                    </button>
+                  </div>
                 </div>
+                
+                {/* Toast Notification */}
+                {showToast && (
+                  <div className="fixed top-20 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 animate-fade-in">
+                    <div className="text-yellow-500">⏰</div>
+                    <span>视频正在正常制作中，敬请期待</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
