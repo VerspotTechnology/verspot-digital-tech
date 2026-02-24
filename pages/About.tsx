@@ -51,10 +51,11 @@ const About: React.FC = () => {
 
           <div className="flex flex-col justify-center">
             <div className="relative group">
-              <div className="relative rounded-3xl border border-white/10 p-12 overflow-hidden">
+              <div className="relative rounded-3xl border border-white/20 p-12 overflow-hidden shadow-[0_0_60px_rgba(255,255,255,0.15)]">
                 <div className="absolute inset-0 bg-cover bg-center bg-no-repeat overflow-hidden rounded-3xl" style={{backgroundImage: 'url(/assets/company-philosophy-bg.png)'}}></div>
-                <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/60 to-black/80 z-0"></div>
                 <GlowEffect color="white" intensity="strong" />
+                <div className="absolute inset-0 bg-white/5 backdrop-blur-sm z-0"></div>
                 
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                   <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
