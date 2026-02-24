@@ -360,6 +360,8 @@ export const enUS = {
     back: 'Back',
     visitors: 'Visitors',
     videoDeveloping: 'Video in Development',
+    videoComingSoon: 'Video is being produced normally, please look forward to it',
+    playButton: 'To be played',
     offline: 'Network connection lost',
     copied: 'Copied',
     copiedToClipboard: 'Copied to clipboard',

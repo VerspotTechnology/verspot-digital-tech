@@ -360,6 +360,8 @@ export const arSA = {
     back: 'رجوع',
     visitors: 'الزوار',
     videoDeveloping: 'الفيديو قيد التطوير',
+    videoComingSoon: 'الفيديو يتم إنتاجه بشكل طبيعي، يرجى الإنتظار',
+    playButton: 'للتشغيل',
     offline: 'تم فقدان اتصال الشبكة',
     copied: 'تم النسخ',
     copiedToClipboard: 'تم النسخ إلى الحافظة',

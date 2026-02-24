@@ -352,22 +352,24 @@ export const zhTW = {
   },
   common: {
     cookie: {
-      title: 'Cookie 設定',
-      description: '我們使用 Cookie 來改善您的瀏覽體驗。繼續使用本網站即表示您同意我們的 Cookie 政策。',
+      title: 'Cookie設定',
+      description: '我們使用cookie來改善您的瀏覽體驗。繼續使用本網站，即表示您同意我們的cookie政策。',
       accept: '接受',
       decline: '拒絕'
     },
     back: '返回',
-    visitors: '訪問量',
+    visitors: '訪客',
     videoDeveloping: '視頻開發中',
-    offline: '網絡連接已斷開',
+    videoComingSoon: '視頻正在正常製作中，敬請期待',
+    playButton: '待播放',
+    offline: '網絡連接丟失',
     copied: '已複製',
     copiedToClipboard: '已複製到剪貼板',
     share: '分享',
     shareToWechat: '分享到微信',
     shareToWeibo: '分享到微博',
     copyLink: '複製鏈接',
-    screenshotToShare: '請截圖分享到微信'
+    screenshotToShare: '截圖分享到微信'
   },
   languageSelector: {
     title: '選擇您的語言',

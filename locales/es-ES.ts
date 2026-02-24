@@ -353,13 +353,15 @@ export const esES = {
   common: {
     cookie: {
       title: 'Configuración de cookies',
-      description: 'Utilizamos cookies para mejorar su experiencia de navegación. Al continuar usando este sitio, acepta nuestra política de cookies.',
+      description: 'Usamos cookies para mejorar su experiencia de navegación. Al continuar usando este sitio web, acepta nuestra política de cookies.',
       accept: 'Aceptar',
       decline: 'Rechazar'
     },
     back: 'Volver',
     visitors: 'Visitantes',
     videoDeveloping: 'Video en desarrollo',
+    videoComingSoon: 'El video se está produciendo normalmente, por favor espere',
+    playButton: 'Por reproducir',
     offline: 'Conexión de red perdida',
     copied: 'Copiado',
     copiedToClipboard: 'Copiado al portapapeles',
@@ -367,7 +369,7 @@ export const esES = {
     shareToWechat: 'Compartir en WeChat',
     shareToWeibo: 'Compartir en Weibo',
     copyLink: 'Copiar enlace',
-    screenshotToShare: 'Capture para compartir en WeChat'
+    screenshotToShare: 'Captura de pantalla para compartir en WeChat'
   },
   languageSelector: {
     title: 'Seleccione su idioma',

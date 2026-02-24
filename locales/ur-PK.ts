@@ -352,22 +352,24 @@ export const urPK = {
   },
   common: {
     cookie: {
-      title: 'کوکی کی ترتیبات',
-      description: 'ہم آپ کے براؤزنگ تجربے کو بہتر بنانے کے لیے کوکیز استعمال کرتے ہیں۔ اس ویب سائٹ کو استعمال جاری رکھ کر، آپ ہماری کوکی پالیسی سے متفق ہیں۔',
+      title: 'کوکی سیٹنگز',
+      description: 'ہم آپ کے براؤزنگ تجربے کو بہتر بنانے کے لیے کوکیز استعمال کرتے ہیں۔ اس ویب سائٹ کا استعمال جاری رکھ کر، آپ ہماری کوکی پالیسی سے اتفاق کرتے ہیں۔',
       accept: 'قبول کریں',
       decline: 'مسترد کریں'
     },
     back: 'واپس',
-    visitors: 'زائرین',
-    videoDeveloping: 'ویڈیو تیاری میں ہے',
-    offline: 'نیٹ ورک کنکشن منقطع',
-    copied: 'کاپی ہو گیا',
-    copiedToClipboard: 'کلپ بورڈ میں کاپی ہو گیا',
-    share: 'شیئر کریں',
+    visitors: 'مہمان',
+    videoDeveloping: 'ویڈیو تیار کیا جا رہا ہے',
+    videoComingSoon: 'ویڈیو عام طور پر تیار کیا جا رہا ہے، براہ کرم انتظار کریں۔',
+    playButton: 'چلانے کے لیے',
+    offline: 'نیٹ ورک کنکشن کھو گیا',
+    copied: 'کاپی ہو چکا ہے',
+    copiedToClipboard: 'کلپ بورڈ میں کاپی کیا گیا',
+    share: 'شئیر کریں',
     shareToWechat: 'WeChat پر شیئر کریں',
     shareToWeibo: 'Weibo پر شیئر کریں',
     copyLink: 'لنک کاپی کریں',
-    screenshotToShare: 'WeChat پر شیئر کرنے کے لیے اسکرین شاٹ لیں'
+    screenshotToShare: 'WeChat پر شیئر کرنے کے لیے اسکرین شاٹ کریں'
   },
   languageSelector: {
     title: 'اپنی زبان منتخب کریں',

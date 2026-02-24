@@ -353,21 +353,23 @@ export const ruRU = {
   common: {
     cookie: {
       title: 'Настройки Cookie',
-      description: 'Мы используем файлы cookie для улучшения вашего опыта просмотра. Продолжая использовать этот сайт, вы соглашаетесь с нашей политикой cookie.',
+      description: 'Мы используем cookie для улучшения вашего пользовательского опыта. Продолжая использовать этот сайт, вы соглашаетесь с нашей политикой cookie.',
       accept: 'Принять',
       decline: 'Отклонить'
     },
     back: 'Назад',
     visitors: 'Посетители',
     videoDeveloping: 'Видео в разработке',
-    offline: 'Сетевое соединение потеряно',
+    videoComingSoon: 'Видео в обычном режиме production, пожалуйста, ожидайте',
+    playButton: 'Начать воспроизведение',
+    offline: 'Потеря сетевого соединения',
     copied: 'Скопировано',
     copiedToClipboard: 'Скопировано в буфер обмена',
     share: 'Поделиться',
     shareToWechat: 'Поделиться в WeChat',
     shareToWeibo: 'Поделиться в Weibo',
     copyLink: 'Копировать ссылку',
-    screenshotToShare: 'Сделайте скриншот для публикации в WeChat'
+    screenshotToShare: 'Сделать скриншот для分享 в WeChat'
   },
   languageSelector: {
     title: 'Выберите язык',

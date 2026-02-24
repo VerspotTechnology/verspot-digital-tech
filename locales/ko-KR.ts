@@ -360,6 +360,8 @@ export const koKR = {
     back: '뒤로',
     visitors: '방문자',
     videoDeveloping: '비디오 개발 중',
+    videoComingSoon: '비디오가 정상적으로 제작 중입니다. 기다려 주세요.',
+    playButton: '재생 예정',
     offline: '네트워크 연결 끊김',
     copied: '복사됨',
     copiedToClipboard: '클립보드에 복사됨',

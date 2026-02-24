@@ -352,22 +352,24 @@ export const zhCN = {
   },
   common: {
     cookie: {
-      title: 'Cookie 设置',
-      description: '我们使用 Cookie 来改善您的浏览体验。继续使用本网站即表示您同意我们的 Cookie 政策。',
+      title: 'Cookie设置',
+      description: '我们使用cookie来改善您的浏览体验。继续使用本网站，即表示您同意我们的cookie政策。',
       accept: '接受',
       decline: '拒绝'
     },
     back: '返回',
-    visitors: '访问量',
+    visitors: '访客',
     videoDeveloping: '视频开发中',
-    offline: '网络连接已断开',
+    videoComingSoon: '视频正在正常制作中，敬请期待',
+    playButton: '待播放',
+    offline: '网络连接丢失',
     copied: '已复制',
     copiedToClipboard: '已复制到剪贴板',
     share: '分享',
     shareToWechat: '分享到微信',
     shareToWeibo: '分享到微博',
     copyLink: '复制链接',
-    screenshotToShare: '请截图分享到微信'
+    screenshotToShare: '截图分享到微信'
   },
   languageSelector: {
     title: '选择您的语言',

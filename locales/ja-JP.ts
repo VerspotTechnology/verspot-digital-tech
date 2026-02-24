@@ -360,6 +360,8 @@ export const jaJP = {
     back: '戻る',
     visitors: '訪問者',
     videoDeveloping: 'ビデオ開発中',
+    videoComingSoon: '動画は正常に制作中です。お待ちください。',
+    playButton: '再生予定',
     offline: 'ネットワーク接続が切断されました',
     copied: 'コピーしました',
     copiedToClipboard: 'クリップボードにコピーしました',

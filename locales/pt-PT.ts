@@ -352,22 +352,24 @@ export const ptPT = {
   },
   common: {
     cookie: {
-      title: 'Configurações de cookies',
-      description: 'Usamos cookies para melhorar sua experiência de navegação. Ao continuar usando este site, você concorda com nossa política de cookies.',
+      title: 'Definições de cookies',
+      description: 'Usamos cookies para melhorar a sua experiência de navegação. Ao continuar a usar este site, aceita a nossa política de cookies.',
       accept: 'Aceitar',
       decline: 'Recusar'
     },
     back: 'Voltar',
     visitors: 'Visitantes',
     videoDeveloping: 'Vídeo em desenvolvimento',
+    videoComingSoon: 'O vídeo está a ser produzido normalmente, por favor aguarde',
+    playButton: 'Por reproduzir',
     offline: 'Conexão de rede perdida',
     copied: 'Copiado',
     copiedToClipboard: 'Copiado para a área de transferência',
-    share: 'Compartilhar',
-    shareToWechat: 'Compartilhar no WeChat',
-    shareToWeibo: 'Compartilhar no Weibo',
+    share: 'Partilhar',
+    shareToWechat: 'Partilhar no WeChat',
+    shareToWeibo: 'Partilhar no Weibo',
     copyLink: 'Copiar link',
-    screenshotToShare: 'Capture para compartilhar no WeChat'
+    screenshotToShare: 'Captura de ecrã para partilhar no WeChat'
   },
   languageSelector: {
     title: 'Selecione seu idioma',

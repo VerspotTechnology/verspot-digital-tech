@@ -94,7 +94,7 @@ const About: React.FC = () => {
                       aria-label="Play video"
                     >
                       <span>▶</span>
-                      <span>待播放</span>
+                      <span>{t.common.playButton}</span>
                     </button>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const About: React.FC = () => {
                 {showToast && (
                   <div className="fixed top-20 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 animate-fade-in">
                     <div className="text-yellow-500">⏰</div>
-                    <span>视频正在正常制作中，敬请期待</span>
+                    <span>{t.common.videoComingSoon}</span>
                   </div>
                 )}
               </div>
