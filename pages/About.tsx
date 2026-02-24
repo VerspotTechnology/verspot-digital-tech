@@ -45,7 +45,8 @@ const About: React.FC = () => {
 
           <div className="flex flex-col justify-center">
             <div className="relative group">
-              <div className="relative bg-black rounded-3xl border border-white/10 p-12 overflow-hidden" style={{backgroundImage: 'url(/assets/company-philosophy-bg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+              <div className="relative rounded-3xl border border-white/10 p-12 overflow-hidden">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat overflow-hidden rounded-3xl" style={{backgroundImage: 'url(/assets/company-philosophy-bg.png)'}}></div>
                 <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
                 <GlowEffect color="mixed" intensity="medium" />
                 
