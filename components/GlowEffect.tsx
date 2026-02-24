@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useMemo } from 'react';
 
 interface GlowEffectProps {
-  color?: 'blue' | 'purple' | 'pink' | 'cyan' | 'orange' | 'green' | 'mixed';
+  color?: 'blue' | 'purple' | 'pink' | 'cyan' | 'orange' | 'green' | 'mixed' | 'white';
   intensity?: 'subtle' | 'medium' | 'strong';
   animated?: boolean;
 }
@@ -34,6 +34,10 @@ const colorSchemes = {
   mixed: {
     colors: ['rgba(59, 130, 246, 0.35)', 'rgba(139, 92, 246, 0.3)', 'rgba(236, 72, 153, 0.25)'],
     shadow: 'rgba(99, 102, 241, 0.15)'
+  },
+  white: {
+    colors: ['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0.4)', 'rgba(255, 255, 255, 0.3)'],
+    shadow: 'rgba(255, 255, 255, 0.2)'
   }
 };
 
